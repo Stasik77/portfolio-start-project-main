@@ -13,7 +13,9 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: #0FBF61
-
+    background-color: #0FBF61;
+    display:flex;
+    justify-content:space-evenly
+    
 `
 
