@@ -9,9 +9,9 @@ export const Main =() => {
             <FlexConteiner align={"center"} justify={"space-around"}>
             <div>
                 <span>Hello, I’m</span>
-                <h2>Fabio Scaletta</h2>
+                <Name>Fabio Scaletta</Name>
                 
-                <h1>I’m Front End Developer  . </h1>
+                <MainTitle>I’m Front End Developer  . </MainTitle>
             </div>
 
             <Photo src={photo} alt="myphoto" />
@@ -22,7 +22,6 @@ export const Main =() => {
 }
 const StyledMain = styled.div`
  min-height: 100vh ;
-
 background-color:gray;
 `
 
@@ -33,5 +32,12 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
+
+    
+`
+
+
+const Name = styled.h1`
+
     
 `
