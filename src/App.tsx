@@ -6,6 +6,7 @@ import { Main } from './layout/sections/main/Main';
 import { Skills } from './layout/sections/skills/Skills';
 import { Slogan } from './layout/sections/slogan/Slogan';
 import { Testimony } from './layout/sections/testimony/Testimony';
+import { Works_2 } from './layout/sections/works/work/Works_2';
 import { Works } from './layout/sections/works/Works';
 
 
@@ -16,6 +17,7 @@ function App() {
             <Main/>
             <Skills/>
            <Works/>
+           <Works_2 />
            <Testimony/>
            <Contacts/>
            <Slogan/>
