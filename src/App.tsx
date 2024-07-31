@@ -14,16 +14,16 @@ import { Works } from './layout/sections/works/Works';
 function App() {
     return (
         <div className="App">
-            <Header/>
-            <Main/>
+            <Header />
+            <Main />
             <AboutMe />
-            <Skills/>
-           <Works/>
-           <Works_2 />
-           <Testimony/>
-           <Contacts/>
-           <Slogan/>
-           <Footer/>
+            <Skills />
+            <Works />
+            <Works_2 />
+            <Testimony />
+            <Contacts />
+            <Slogan />
+            <Footer />
 
         </div>
     );

@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GlobalDtyled } from './styles/GlobalStyled';
+import { GlobalStyled } from './styles/GlobalStyled';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <GlobalDtyled/>
+    <GlobalStyled/>
     <App />
   </React.StrictMode>
 );

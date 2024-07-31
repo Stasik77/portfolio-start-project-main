@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./Theme";
 
-export const GlobalDtyled = createGlobalStyle`
+export const GlobalStyled = createGlobalStyle`
     *,
     *::before,
     *::after {
@@ -37,6 +38,10 @@ button {
 }
 
  
+section:first-child{
+ background-color: ${theme.colors.primaryBg};
+}
+
  
 
 `
