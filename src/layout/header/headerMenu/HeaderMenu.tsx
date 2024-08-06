@@ -59,7 +59,7 @@ display:inline-block;
 height:50%;
 overflow-y:hidden;
 /* outline: 1px solid red; */
-color: ${theme.colors.primaryBg};
+color: ${theme.colors.primaryText};
 
 & + & {
     top:50%;

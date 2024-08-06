@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
+import { Container } from "../../../../components/Container";
 
 
 type SkillPropsType = {
@@ -11,11 +12,12 @@ type SkillPropsType = {
 export const Skill = (props:SkillPropsType) => {
     return (
         <StyledSkill>
+            <Container>
                     <Icon iconId = {props.iconId}/>
                     <SkillTitle>{props.title}</SkillTitle>
                     <SkillText>{props.description}</SkillText>
 
-                  
+                  </Container>
                 </StyledSkill>
     )
 }

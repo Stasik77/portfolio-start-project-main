@@ -1,12 +1,14 @@
 import React from "react";
 import { styled } from "styled-components";
 import { FlexConteiner } from "../../../components/FlexConteiner";
-import imgMe from "./../../../assets/images/photo-34.webp"
+import imgMe from "./../../../assets/images/Foto.webp"
+
 
 export const AboutMe = () => {
     return (
 
         <StyledWorks>
+            
             <StyledTitle>
                 About Me
             </StyledTitle>
@@ -37,6 +39,7 @@ export const AboutMe = () => {
             </ListSkillItem>
                 </ListSkill>
             </FlexConteiner>
+          
         </StyledWorks>
 
     )
@@ -45,7 +48,7 @@ export const AboutMe = () => {
 
 const StyledWorks = styled.section`
     min-height:100vh;
-    background-color:#a1e2aad3;
+    
      
     `
 const StyledTitle = styled.h2`

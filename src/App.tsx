@@ -1,4 +1,5 @@
 import './App.css';
+import { Container } from './components/Container';
 import { Footer } from './layout/footer/Footer';
 import { Header } from './layout/header/Header';
 import { AboutMe } from './layout/sections/aboutMe/AboutMe';
@@ -14,8 +15,9 @@ import { Works } from './layout/sections/works/Works';
 function App() {
     return (
         <div className="App">
-            <Header />
-            <Main />
+            <Container>  
+            <Header/>           
+             <Main />
             <AboutMe />
             <Skills />
             <Works />
@@ -24,10 +26,15 @@ function App() {
             <Contacts />
             <Slogan />
             <Footer />
-
+            </Container>
         </div>
     );
+
 }
 
 export default App;
+ 
 
+
+
+// * можно ли указать Container в App ??*// */
