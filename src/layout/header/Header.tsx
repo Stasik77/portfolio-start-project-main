@@ -23,10 +23,10 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color:rgba(15,191,97,0.1);
-    padding:20px 0;
+    /* background-color:rgba(15,191,97,0.1); */
+    /* padding:20px 0; */
     position:fixed;
-    top:0;
+    margin-top:25px;
     left:0;
     right:0;
     z-index:9999;

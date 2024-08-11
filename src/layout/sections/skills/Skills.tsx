@@ -4,10 +4,12 @@ import { Icon } from "../../../components/icon/Icon";
 import { SectionServisTitile, SectionTitle } from "../../../components/SectionTitle";
 import { Skill } from "./skill/Skill";
 import { FlexConteiner } from "../../../components/FlexConteiner";
+import { Container } from "../../../components/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills>
+            <Container> 
             <SectionServisTitile>My service</SectionServisTitile>
             <SectionTitle>What I Do </SectionTitle>
             <FlexConteiner justify={"space-between"}>
@@ -21,6 +23,7 @@ export const Skills = () => {
                        title={"3"}
                        description={"Responsive Design"} />
             </FlexConteiner>
+            </Container>
         </StyledSkills>
     );
 };

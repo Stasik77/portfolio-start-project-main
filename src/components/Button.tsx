@@ -10,5 +10,7 @@ import { theme } from "../styles/Theme";
     width:170px;
     height: 55px;;
     
-    
+    &:hover {
+        background-color:white;
+    }
  `

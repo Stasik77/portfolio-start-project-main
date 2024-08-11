@@ -15,7 +15,7 @@ import { Works } from './layout/sections/works/Works';
 function App() {
     return (
         <div className="App">
-            <Container>  
+            
             <Header/>           
              <Main />
             <AboutMe />
@@ -26,7 +26,7 @@ function App() {
             <Contacts />
             <Slogan />
             <Footer />
-            </Container>
+           
         </div>
     );
 

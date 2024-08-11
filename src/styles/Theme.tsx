@@ -5,5 +5,8 @@ export const theme = {
         primasyBtn: "rgba(15,191,97)",
         primasyBtnText:"#151D41",
         font:"#494949",
+        titleText: "#0FBF61",
+         
+
 }
 }

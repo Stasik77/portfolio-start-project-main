@@ -16,6 +16,7 @@ export const GlobalStyled = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height:1.2;
 }
 
 code {
