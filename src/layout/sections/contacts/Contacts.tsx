@@ -2,10 +2,12 @@ import React from "react";
 import { styled } from "styled-components";
 import { SectionTitle } from "../../../components/SectionTitle";
 import { Button } from "../../../components/Button";
+import { Container } from "../../../components/Container";
 
 export const Contacts =() => {
     return (
         <StyledContact>
+            <Container>
             <SectionTitle>Contact</SectionTitle>
             <StyledForm>
                 <Field placeholder="Name"/>
@@ -13,6 +15,7 @@ export const Contacts =() => {
                 <Field placeholder="message" as={'textarea'}/>
                 <Button type={"submit"}>Send Message</Button>
             </StyledForm>
+            </Container>
         </StyledContact>
     );
 }
@@ -27,10 +30,27 @@ const StyledForm = styled.form`
     width:100%;
     display:flex;
     flex-direction:column;
-    gap:10px;
+    align-items:center;
+    gap:15px;
+    margin:0 auto;
+
+    textarea {
+        resize:none;
+        height: 155px;
+    }
+    
 `
 
 const Field = styled.input`
-    
+    width:100%;
+    padding:7px 15px;
+    font-style:"Roboto";
+     
+    &::placeholder {
+        text-transform:capitalize;
+         
+    }
+
+   
 `
 

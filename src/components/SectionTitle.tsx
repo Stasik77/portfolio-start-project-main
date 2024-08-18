@@ -1,15 +1,21 @@
 import { styled } from "styled-components";
+import { theme } from "../styles/Theme";
 
 
 export const SectionTitle = styled.h2`
 text-align: center;
-
-color:#0FBF61;
+font-size: 40px;
+line-height: 75%;
+color:${theme.colors.titleText};
+margin-bottom: 92px;
     
 `
 export const SectionServisTitile = styled.p`
     text-align: center;
     font-size:18px;
-
-    color:#494949;
+    line-height: 167%;
+    color:${theme.colors.font};
 `
+
+
+// как менять значения заданые тут 

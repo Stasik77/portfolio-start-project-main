@@ -6,6 +6,7 @@ export const theme = {
         primasyBtnText:"#151D41",
         font:"#494949",
         titleText: "#0FBF61",
+        btnBg:"#ffffff",
          
 
 }

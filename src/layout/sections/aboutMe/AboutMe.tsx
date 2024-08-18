@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <Container>
 
 
-                <FlexConteiner justify={"space-between"}>
+                <FlexConteiner hidden justify={"space-between"}>
 
             <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
@@ -30,7 +30,8 @@ export const AboutMe = () => {
                         {/* <FlexConteiner> */}
                         <ListSkill>
 
-                            <ListSkillItem>
+                            <ListSkillItem >
+                           
                                 Angular
                             </ListSkillItem>
                             <ListSkillItem>
@@ -63,19 +64,28 @@ export const AboutMe = () => {
 
 const PhotoWrapper = styled.div`
     position: relative;
+    z-index:0;
+        margin-top:85px;
+        margin-left: 85px;
+
     &::before{
         content:"";
         width: 280px;
         height: 420px;
-        border: 3px solid ${theme.colors.};
+        border: 3px solid ${theme.colors.titleText};
         border-radius: 20px;
+        position:absolute;
+        
+        left:-49px;
+        top:38px;
+        z-index: -1;
     }
 `
 
 const StyledWorks = styled.section`
     min-height:100vh;
     display:flex;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     
      
     `
@@ -83,14 +93,14 @@ const StyledTitle = styled.h2`
         /* text-align:center; */
         font-size: 40px;
         font-weight: 700;
-       color: ${theme.colors.titleText};
+        color: ${theme.colors.titleText};
        margin-bottom: 30px;
         
     `
 const StyledImage = styled.img`
     width:280px;
     height: 420px;
-    margin-top:85px;
+    
     
 
      
@@ -130,7 +140,7 @@ width:100%;
 
 const ListSkillItem = styled.li`
     
-    list-style-image:url(${imgLi});
+   list-style-image:url(${imgLi});   // как через Id закинуть свг 
     padding-left: 9px;
     padding-bottom:22px;
     align-items:center;
