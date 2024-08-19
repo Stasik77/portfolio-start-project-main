@@ -9,7 +9,7 @@ import { Skills } from './layout/sections/skills/Skills';
 import { Slogan } from './layout/sections/slogan/Slogan';
 import { Testimony } from './layout/sections/testimony/Testimony';
 import { Works_2 } from './layout/sections/works/work/Works_2';
-import { Works } from './layout/sections/works/Works';
+import { WorksWhatIDo } from './layout/sections/works/WorksWhatIDo';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
              <Main />
             <AboutMe />
             <Skills />
-            <Works />
+            <WorksWhatIDo />
             <Works_2 />
             {/* <Testimony /> */}
             <Contacts />

@@ -11,7 +11,7 @@ export const Main =() => {
     return(
         <StyledMain>
             <Container>
-            <FlexConteiner align={"center"} justify={"space-around"} minheight={"50%"}>
+            <FlexConteiner align={"center"} justify={"space-around"}>
             <div>
                 <SmallText>Hello, I’m</SmallText>
                 <Name>Stanislav Golovanov</Name>
@@ -26,11 +26,13 @@ export const Main =() => {
     )
 
 }
-const StyledMain = styled.div`
-min-height: 1440px;
+const StyledMain = styled.section`
+height: 50%;
 background-color:rgba(15,191,97,0.1);
 display:flex;
 min-width:1440px;
+margin-bottom: 195px;
+
  
 
 

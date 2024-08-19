@@ -16,6 +16,7 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     align-items: ${props => props.align || "streght"};
     flex-wrap: ${props =>props.wrap || "nowrap"};
     min-height:${props => props.minheight}; 
+    height:100%;
     gap:${props => props.gap};
     border:2px solid green;
    

@@ -9,7 +9,7 @@ src: string
 
 }
 // как менять размер текста    
-export const Work = (props:WorkPropsType) => {
+export const WorkWhatIdo = (props:WorkPropsType) => {
     return (
         <StyledWork>
             <TextWrapper> 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 import { FlexConteiner } from "../../../components/FlexConteiner";
-import { Work } from "./work/Work";
+import { WorkWhatIdo } from "./work/WorkWhatIdo";
 import uxDesignImg from "./../../../../src/assets/images/ux-skill.png"
 import frontImg from "./../../../../src/assets/images/front-skill.png"
 import designImg from "./../../../../src/assets/images/desig-skill.png"
@@ -13,22 +13,22 @@ import { Container } from "../../../components/Container";
 
 
 
-export const Works = () => {
+export const WorksWhatIDo = () => {
     return (
         <StyledWorks>
             <Container> 
             <FlexConteiner direction={"column"} align={"center"}>
                
                 <WorkWrapper>
-                    <Work title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
+                    <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
                 </WorkWrapper>
 
                 <WorkWrapper>
-                    <Work title={"Front end development"} text={"I build landing pages and responsive websites and web App"} src={frontImg} />
+                    <WorkWhatIdo title={"Front end development"} text={"Implement UX design into live and user friendly "} src={frontImg} />
                 </WorkWrapper>
 
                 <WorkWrapper>
-                    <Work title={"responsive design"} text={"I build landing pages and responsive websites and web App"} src={designImg} />
+                    <WorkWhatIdo title={"responsive design"} text={"I build landing pages and responsive websites and web App"} src={designImg} />
                 </WorkWrapper>
 
             </FlexConteiner>
