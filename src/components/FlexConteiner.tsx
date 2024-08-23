@@ -8,6 +8,9 @@ type FlexConteinerPropsType = {
     wrap?: string
     gap?: string
     minheight?: string
+    paddingbt?: string
+    
+
 }
 export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     display:flex;
@@ -19,6 +22,9 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     height:100%;
     gap:${props => props.gap};
     border:2px solid green;
+    padding-bottom:${props => props.paddingbt};
+
+     
    
 
 `

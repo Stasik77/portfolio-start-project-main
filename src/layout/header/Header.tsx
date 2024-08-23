@@ -16,6 +16,8 @@ export const Header = () => {
                     <Logo />
                     <HeaderMenu menuItems={items} />
                 </FlexConteiner>
+                
+
             </Container>
 
         </StyledHeader>
@@ -23,12 +25,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    /* background-color:rgba(15,191,97,0.1); */
-    /* padding:20px 0; */
-    position:fixed;
-    margin-top:25px;
+    background-color:rgba(15,191,97,0.1);
     
-     
+     /* position:fixed;  */
+    /* padding-top: 25px; */
+    
     left:0;
     right:0;
     z-index:9999;

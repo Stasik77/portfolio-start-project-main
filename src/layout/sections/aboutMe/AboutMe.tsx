@@ -83,8 +83,12 @@ const PhotoWrapper = styled.div`
 `
 
 const StyledWorks = styled.section`
-    min-height:100vh;
+    min-height:100%;
     display:flex;
+    padding-top: 170px;
+    padding-bottom: 115px;
+    
+
     /* border:1px solid blue; */
     
      
@@ -94,7 +98,8 @@ const StyledTitle = styled.h2`
         font-size: 40px;
         font-weight: 700;
         color: ${theme.colors.titleText};
-       margin-bottom: 30px;
+        padding-bottom: 30px;
+        
         
     `
 const StyledImage = styled.img`

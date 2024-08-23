@@ -5,48 +5,47 @@ import { FlexConteiner } from "../../../components/FlexConteiner";
 import { Container } from "../../../components/Container";
 import { Button } from "../../../components/Button";
 import { theme } from "../../../styles/Theme";
-
-
 export const Main =() => {
     return(
         <StyledMain>
             <Container>
-            <FlexConteiner align={"center"} justify={"space-around"}>
+            <FlexConteiner align={"center"} minheight="100px">
             <div>
+                 
                 <SmallText>Hello, I’m</SmallText>
                 <Name>Stanislav Golovanov</Name>
-                <Button>Send Email</Button>
+                <Button paddingleft={"160px"}>Send Email</Button>
                 
             </div>
 
             <Photo src={photo} alt="myphoto"/>
             </FlexConteiner>
             </Container>
-        </StyledMain> 
+        // </StyledMain> 
     )
 
 }
 const StyledMain = styled.section`
-height: 50%;
 background-color:rgba(15,191,97,0.1);
-display:flex;
+/* display:flex;  */
+
 min-width:1440px;
-margin-bottom: 195px;
-
- 
+padding-bottom: 50px;
 
 
- 
 
- 
+
 
 `
+
+
 
 const SmallText = styled.span`
     color:${theme.colors.primasyBtn};
     font-size: 30px;
     font-weight: 400;
-    margin-bottom: 7px;
+    padding-bottom: 7px;
+    
     
 `
 
@@ -61,11 +60,13 @@ const Photo = styled.img`
 
 
 const Name = styled.h1`
-margin-bottom:155px;
-margin-right: 125px;
+padding-bottom:155px;
+padding-right: 125px;
 font-family: "Poppins" sans-serif;
 font-weight: 700;
 font-size: 60px;
 color: #000;
     
 `
+
+ 

@@ -7,6 +7,7 @@ type ButtonPropsType = {
     bgcolor?: string
     color?: string
     secondBtn?: boolean
+    paddingleft?: string
 }
 
 
@@ -15,7 +16,8 @@ type ButtonPropsType = {
     border-radius:50px;
     color:${props =>props.color || theme.colors.primasyBtnText};
     width:170px;
-    height: 55px;;
+    height: 55px;
+    padding-left:${props => props.paddingleft}
     
     &:hover {
         background-color:${theme.colors.btnBg} ;

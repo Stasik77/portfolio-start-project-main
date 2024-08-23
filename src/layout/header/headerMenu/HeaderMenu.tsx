@@ -1,7 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
 import { theme } from "../../../styles/Theme";
-
+import ilipsImgR from "../../../assets/images/EllipseR.svg"
+import ilipsImgL from "../../../assets/images/EllipseL.svg"; 
 
 
 
@@ -27,6 +28,8 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
                     </ListItem>
                 })}
             </ul>
+            <ElipsR src={ilipsImgR}/>
+            <ElipsL src={ilipsImgL}/>
         </StyledHeaderMenu>
 
     )
@@ -36,12 +39,26 @@ const StyledHeaderMenu = styled.nav`
     ul {
         display:flex;
         gap:30px;
-        justify-content:center
+        justify-content:center;
+        position: relative;
     }
 
 `
 
+const ElipsR = styled.img`
+    position:absolute;
+    right:0;
+    top:0;
 
+`
+const ElipsL = styled.img`
+    position:absolute;
+    left:0;
+    top:0;
+    margin-top: 160px;
+
+
+`
  
 
 const Link = styled.a`

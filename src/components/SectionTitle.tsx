@@ -7,13 +7,13 @@ text-align: center;
 font-size: 40px;
 line-height: 75%;
 color:${theme.colors.titleText};
-margin-bottom: 92px;
+padding-bottom: 98px;
     
 `
 export const SectionServisTitile = styled.p`
     text-align: center;
     font-size:18px;
-    line-height: 167%;
+    padding-bottom: 16px; 
     color:${theme.colors.font};
 `
 

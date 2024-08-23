@@ -6,27 +6,30 @@ import { FlexConteiner } from "../../../../components/FlexConteiner";
 import { theme } from "../../../../styles/Theme";
 
 
-type SkillPropsType = {
-    iconId: string
-    title: string
-    description: string
-}
-export const Skill = (props: SkillPropsType) => {
-    return (
-        <StyledSkill>
-            {/* <Container> */}
-            <FlexConteiner>
-                <IconWrapper>
-                    <Icon iconId={props.iconId} />
-                </IconWrapper>
 
-                <SkillTitle>{props.title}</SkillTitle>
-                <SkillText>{props.description}</SkillText>
-            </FlexConteiner>
-            {/* </Container> */}
-        </StyledSkill>
-    )
-}
+// type SkillPropsType = {
+//     iconId: string
+//     title: string
+//     description: string
+// }
+// export const Skill = (props: SkillPropsType) => {
+//     return (
+//         <StyledSkill>
+//             {/* <Container> */}
+//             <FlexConteiner>
+//                 <IconWrapper>  
+//                     <Icon iconId={props.iconId} />
+//                 </IconWrapper>
+
+//                 <SkillTitle>{props.title}</SkillTitle>
+//                 <SkillText>{props.description}</SkillText>
+//             </FlexConteiner>
+//             {/* </Container> */}
+//         </StyledSkill>
+//     )
+// }
+
+ 
 
 
 const IconWrapper = styled.div`
