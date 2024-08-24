@@ -31,7 +31,6 @@ export const AboutMe = () => {
                         <ListSkill>
 
                             <ListSkillItem >
-                           
                                 Angular
                             </ListSkillItem>
                             <ListSkillItem>
@@ -145,7 +144,7 @@ width:100%;
 
 const ListSkillItem = styled.li`
     
-   list-style-image:url(${imgLi});   // как через Id закинуть свг 
+    list-style-image:url(${imgLi});   // как через Id закинуть свг 
     padding-left: 9px;
     padding-bottom:22px;
     align-items:center;

@@ -74,7 +74,7 @@ const SkillsWrapper = styled.div`
     display:flex;
     gap:20px;
     position: relative;
-    align-items:center;
+    align-items:start;
     padding: 25px;
 
  &::before {

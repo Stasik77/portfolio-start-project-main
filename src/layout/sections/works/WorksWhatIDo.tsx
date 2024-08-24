@@ -17,7 +17,7 @@ export const WorksWhatIDo = () => {
     return (
         <StyledWorks>
             <Container> 
-            <FlexConteiner direction={"column"} align={"center"}>
+            <FlexConteiner direction={"column"} align={"center"} gap="100px">
                
                 <WorkWrapper>
                     <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
@@ -45,12 +45,12 @@ const StyledWorks = styled.section`
 `
 
 const WorkWrapper = styled.div`
-    border:1px solid red;
+    /* border:1px solid red; */
     display:flex;
-    flex-direction:row;
+    min-width:100%;
 
-    width:1110px;
-    justify-content:space-evenly;
+    /* width:1110px; */
+    
     
    
 `
