@@ -9,6 +9,7 @@ type FlexConteinerPropsType = {
     gap?: string
     minheight?: string
     paddingbt?: string
+     
     
 
 }
@@ -21,9 +22,9 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     min-height:${props => props.minheight}; 
     height:100%;
     gap:${props => props.gap};
-    border:2px solid green;
+    /* border:2px solid green; */
     padding-bottom:${props => props.paddingbt};
-
+     
      
    
 

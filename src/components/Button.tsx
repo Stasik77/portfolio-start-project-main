@@ -8,6 +8,8 @@ type ButtonPropsType = {
     color?: string
     secondBtn?: boolean
     paddingleft?: string
+    marg?:string
+    displayBlock?:string
 }
 
 
@@ -17,10 +19,13 @@ type ButtonPropsType = {
     color:${props =>props.color || theme.colors.primasyBtnText};
     width:170px;
     height: 55px;
-    padding-left:${props => props.paddingleft}
+    font-size:20px;
+    /* padding-left:${props => props.paddingleft}; */
+    margin:${props => props.marg};
+    display:${props => props.displayBlock};
     
     &:hover {
-        background-color:${theme.colors.btnBg} ;
+        background-color:${theme.colors.btnBg};
     } 
 
 
@@ -44,12 +49,6 @@ type ButtonPropsType = {
 
     `}  
     
-
-
-  
-   
-
- 
 
 `
 

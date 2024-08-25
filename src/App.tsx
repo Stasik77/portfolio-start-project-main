@@ -23,8 +23,9 @@ function App() {
             <WorksWhatIDo />
             <Works_2 />
             {/* <Testimony /> */}
-            <Contacts />
+            
             <Slogan />
+            {/* <Contacts /> */}
             <Footer />
            
         </div>

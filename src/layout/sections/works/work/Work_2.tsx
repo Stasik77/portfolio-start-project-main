@@ -9,6 +9,8 @@ type Work_2PropsType = {
 export const Work_2 =(props:Work_2PropsType) =>{
     return (
         <ImageWork_2 src={props.src}/>
+        
+
 
 
          
@@ -18,4 +20,9 @@ export const Work_2 =(props:Work_2PropsType) =>{
 const ImageWork_2 = styled.img`
     width:545px;
     height:350px;
+    object-fit:none;
+    border-radius:35px
+
 `
+
+// почему  одна картинка меняется ? 

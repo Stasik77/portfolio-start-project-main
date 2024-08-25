@@ -49,22 +49,25 @@ const TextWrapper = styled.div`
     width:40%;
     align-items:start;
     padding-left: 50px;
+    padding-bottom: 50px;
      
 `
 
 const Image = styled.img`
-    width:550px;
-    height:394px;
-    object-fit:cover;
+    width:555px;
+    height:395px;
+    object-fit:contain;
     position:absolute;
-    bottom:45px;
+    bottom:90px;
     right:0px;
     position: relative;
+    padding-right: 50px;
      
 ` 
+//нет бордера  размер картинки 
 
 const Link = styled.a`
-    /* padding-top: 75px; */
+  
      font-size: 20px;
      font-weight: 500;
      position: relative;
@@ -78,7 +81,7 @@ const Link = styled.a`
       
   }
 `
-// нижняя ссылка прижата 
+ 
 
 
 

@@ -17,7 +17,7 @@ export const AboutMe = () => {
 
                 <FlexConteiner hidden justify={"space-between"}>
 
-            <PhotoWrapper> 
+                  <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
                     </PhotoWrapper>
                     <StyledText>

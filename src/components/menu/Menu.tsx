@@ -25,9 +25,19 @@ export const Menu = (props:{ menuItems: Array<string>}) => {
 const StyledMenu = styled.nav`
     ul {
         display:flex;
-        gap:30px;
-        justify-content:center
-        
+        gap:40px;
+        justify-content:center;
+        padding-bottom: 95px;
+         
         
     }
+
+     a {
+        text-transform:none;
+         font-style: 18px;
+        color:black;
+        font-weight: 500;
+ 
+    }
+
 `
