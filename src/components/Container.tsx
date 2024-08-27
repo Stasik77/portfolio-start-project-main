@@ -31,6 +31,9 @@ export const Container = styled.div<ContainerPropsType>`
     margin-top:${props => props.mtop};
     background-color:#0FBF61;
     border-radius:15px;
+    position:relative;
+    top:45px;
+    
 `
     }
     

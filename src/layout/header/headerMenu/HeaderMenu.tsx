@@ -43,6 +43,13 @@ const StyledHeaderMenu = styled.nav`
         position: relative;
     }
 
+    @media ${theme.media.tablet} {
+        display:none;
+
+    }
+        
+     
+
 `
 
 const ElipsR = styled.img`

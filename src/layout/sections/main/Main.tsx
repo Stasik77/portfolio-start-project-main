@@ -9,14 +9,12 @@ export const Main =() => {
     return(
         <StyledMain>
             <Container>
-            <FlexConteiner align={"center"} minheight="100px">
-            <div>
-                 
+            <FlexConteiner align={"center"} >
+            <MainWrapper>
                 <SmallText>Hello, I’m</SmallText>
                 <Name>Stanislav Golovanov</Name>
-                <Button paddingleft={"160px"}>Send Email</Button>
-                
-            </div>
+                <Button >Send Email</Button>
+            </MainWrapper>
 
             <Photo src={photo} alt="myphoto"/>
             </FlexConteiner>
@@ -31,27 +29,31 @@ background-color:rgba(15,191,97,0.1);
 
 min-width:1440px;
 padding-bottom: 50px;
-
-
+padding-top: 150px;
 
 
 
 `
 
+const MainWrapper = styled.div`
+    display:flex;
+    flex-direction:column;
+`
 
 
-const SmallText = styled.span`
+const SmallText = styled.p`
     color:${theme.colors.primasyBtn};
     font-size: 30px;
     font-weight: 400;
     padding-bottom: 7px;
+    text-align:left;
     
     
 `
 
 const Photo = styled.img`
     width:548px;
-    height:500px;
+    height:390px;
     object-fit:cover;
     /* margin-top:45px; */
     border-radius:25px;
@@ -60,12 +62,13 @@ const Photo = styled.img`
 
 
 const Name = styled.h1`
-padding-bottom:155px;
+padding-bottom:145px;
 padding-right: 125px;
 font-family: "Poppins" sans-serif;
 font-weight: 700;
 font-size: 60px;
 color: #000;
+text-align:left
     
 `
 

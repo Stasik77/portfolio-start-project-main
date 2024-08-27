@@ -8,6 +8,14 @@ export const theme = {
         titleText: "#0FBF61",
         btnBg:"#ffffff",
          
+},
 
-}
+
+ media: {
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)",
+
+ }
+
+
 }

@@ -5,6 +5,8 @@ import { Button } from "../../../components/Button";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { FlexConteiner } from "../../../components/FlexConteiner";
+import { Footer } from "../../footer/Footer";
+import arrPoligon from "../../../assets/images/Polygon1.svg"
 
 export const Slogan = () => {
     return (
@@ -17,9 +19,6 @@ export const Slogan = () => {
                         <BtnWrapper>
                             <Button secondBtn >Let’s talk</Button>
                         </BtnWrapper>
-
-                 
-
                 </FlexConteiner>
             </Container>
         </StyledSlogan>
@@ -33,21 +32,20 @@ const SloganWrapper = styled.div`
     display:flex;
      flex-direction:column;
      width: 80%;
+     /* position:relative; */
       
-     
-     
-   
-
-    
-     
    
 `
 const BtnWrapper = styled.div`
     display:block;
     align-content:center;
-    
-      
 
+    & ::before {
+        content:url(${arrPoligon});
+        position:absolute;
+        top:60px;
+        right:300px;
+    }
     
  `
 

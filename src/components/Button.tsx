@@ -10,6 +10,7 @@ type ButtonPropsType = {
     paddingleft?: string
     marg?:string
     displayBlock?:string
+    
 }
 
 
@@ -23,6 +24,7 @@ type ButtonPropsType = {
     /* padding-left:${props => props.paddingleft}; */
     margin:${props => props.marg};
     display:${props => props.displayBlock};
+
     
     &:hover {
         background-color:${theme.colors.btnBg};

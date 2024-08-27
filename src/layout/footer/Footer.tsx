@@ -13,23 +13,23 @@ export const Footer = () => {
                 <Copyight>Designed and developed by Rostam Sadiqi 2021</Copyight>
                 <SocialList>
                     <SocialItem>
-                        <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId="be" />
+                        <SocialLink href="#">
+                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="instagram" />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
-                        <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId="instagram" />
+                        <SocialLink href="#">
+                            <Icon height={"25px"} width={"25px"} viewBox={"0 0 25px 25px"} iconId="ball" />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
-                        <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId="be" />
+                        <SocialLink href="#">
+                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="be" />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
-                        <SocialLink>
-                            <Icon height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"} iconId="instagram" />
+                        <SocialLink href="#">
+                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="in" />
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -48,6 +48,8 @@ const StyledFooter = styled.footer`
     min-height:20vh;
     padding-top:180px;
     padding-bottom:70px;
+    
+
 
 `
 
