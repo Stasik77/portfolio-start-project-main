@@ -10,31 +10,32 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
 
         <StyledMobileMenu>
-            <BurgerButton isOpen = {true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
+
             </BurgerButton>
 
 
-        <MobileMenuPopup isOpen = {true}>
-<ul >
+            <MobileMenuPopup isOpen={false}>
+                <ul >
 
-                {props.menuItems.map((item: string, index: number) => {
-                    return <ListItem key={index}>
-                        <Link href="#">
-                            {item}
-                            <Mask>
-                                <span>{item}</span>
-                            </Mask>
-                            <Mask>
-                                <span>{item}</span>
-                            </Mask>
+                    {props.menuItems.map((item: string, index: number) => {
+                        return <ListItem key={index}>
+                            <Link href="#">
+                                {item}
+                                <Mask>
+                                    <span>{item}</span>
+                                </Mask>
+                                <Mask>
+                                    <span>{item}</span>
+                                </Mask>
 
-                        </Link>
-                    </ListItem>
-                })}
-            </ul>
-        </MobileMenuPopup>
-            
+                            </Link>
+                        </ListItem>
+                    })}
+                </ul>
+            </MobileMenuPopup>
+
             <ElipsR src={ilipsImgR} />
             <ElipsL src={ilipsImgL} />
         </StyledMobileMenu>
@@ -53,7 +54,7 @@ const StyledMobileMenu = styled.nav`
      
 
 `
-const MobileMenuPopup = styled.div<{isOpen: boolean}>`
+const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         position: fixed;
         top:0;
         left:0;
@@ -63,7 +64,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         background-color:rgba(32, 32, 94, 0.9);
         display:none;
 
-        ${props => props.isOpen && css<{isOpen: boolean}>`
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
             display:flex;
             justify-content:center;
             align-items:center;
@@ -80,7 +81,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         align-items:center;
     }
 `
-const BurgerButton = styled.button<{isOpen: boolean}>`
+const BurgerButton = styled.button<{ isOpen: boolean }>`
     position:fixed;
     top:-100px;
     right:-100px;
@@ -96,41 +97,42 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         position:absolute;
         left: 40px;
         bottom: 50px;
+    
 
-
-        ${props => props.isOpen && css<{isOpen: boolean}>`
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
         background-color: rgba(255,255,255,0);
-        `}
+        `};
+    
 
 
-        & ::before {
-        content:"";
-        display:block;
+        &::before {
+        content: "";
+        display: block;
         width: 36px;
         height: 2px;
-        background-color:${theme.colors.primaryText};
+        background-color: ${theme.colors.primaryText};
         position:absolute;
         transform:translateY(-10px);
-        
+         
         
 
 
-        ${props => props.isOpen && css<{isOpen: boolean}>`
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
           transform:rotate(-45deg) translateY(0);
         `}
-        }
+        };
 
-        & ::after {
-        content:"";
-        display:block;
+        &::after {
+        content: "";
+        display: block;
         width: 24px;
         height: 2px;
-        background-color:${theme.colors.primaryText};
-        position:absolute;
-        transform:translateY(10px);
+        background-color: ${theme.colors.primaryText};
+        position: absolute;
+        transform: translateY(10px);
         
  
-        ${props => props.isOpen && css<{isOpen: boolean}>`
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform:rotate( 45deg) translateY(0);
         width: 36px;
         

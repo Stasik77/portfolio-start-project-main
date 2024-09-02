@@ -7,7 +7,7 @@ type WorkPropsType = {
 title: string
 text: string
 src: string
-fs?: string
+// fs?: string
 
 
 }
@@ -30,8 +30,9 @@ export const WorkWhatIdo = (props:WorkPropsType) => {
 
 const StyledWork = styled.div`
    
-     /* max-width:1100px; */
+     max-width:1100px;
      width:100%;
+    
      display:flex;
      justify-content:space-between;
      border:1px solid #C4C4C4;
@@ -56,15 +57,15 @@ const TextWrapper = styled.div`
 const Image = styled.img`
     width:555px;
     height:395px;
-    object-fit:contain;
-    position:absolute;
+    object-fit:fill;
+    /* position:absolute; */
     bottom:90px;
     right:0px;
     position: relative;
     padding-right: 50px;
      
 ` 
-//нет бордера  размер картинки 
+//нет бордера  размер картинки не краев 
 
 const Link = styled.a`
   

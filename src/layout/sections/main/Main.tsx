@@ -9,7 +9,7 @@ export const Main =() => {
     return(
         <StyledMain>
             <Container>
-            <FlexConteiner align={"center"} >
+            <FlexConteiner align={"center"} justify={"space-between"} wrap="wrap">
             <MainWrapper>
                 <SmallText>Hello, I’m</SmallText>
                 <Name>Stanislav Golovanov</Name>
@@ -27,7 +27,7 @@ const StyledMain = styled.section`
 background-color:rgba(15,191,97,0.1);
 /* display:flex;  */
 
-min-width:1440px;
+/* min-width:1440px; */
 padding-bottom: 50px;
 padding-top: 150px;
 
