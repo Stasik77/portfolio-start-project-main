@@ -8,6 +8,7 @@ import uxDesignImg from "./../../../../src/assets/images/ux-skill.png"
 import frontImg from "./../../../../src/assets/images/front-skill.png"
 import designImg from "./../../../../src/assets/images/desig-skill.png"
 import { Container } from "../../../components/Container";
+import { theme } from "../../../styles/Theme";
 
 
 
@@ -17,7 +18,7 @@ export const WorksWhatIDo = () => {
     return (
         <StyledWorks>
             <Container> 
-            <FlexConteiner direction={"column"} align={"center"} gap="100px">
+            <FlexConteiner direction={"column"} align={"center"} gap="100px" >
                
                 <WorkWrapper>
                     <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
@@ -48,7 +49,9 @@ const WorkWrapper = styled.div`
     /* border:1px solid red; */
     display:flex;
     min-width:100%;
-
+    margin-bottom: 75px;
+   
+    
     /* width:1110px; */
     
     

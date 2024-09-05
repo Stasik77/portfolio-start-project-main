@@ -19,13 +19,15 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     justify-content: ${props => props.justify || "flex-start"};
     align-items: ${props => props.align || "streght"};
     flex-wrap: ${props =>props.wrap || "nowrap"};
-     
     height:100%;
     gap:${props => props.gap};
-    border:2px solid green;
+    /* border:2px solid green; */
     padding-bottom:${props => props.paddingbt};
      
      
    
 
 `
+
+
+// media запрос в самой Компоненте делать ,?

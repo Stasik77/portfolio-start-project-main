@@ -30,6 +30,7 @@ type ButtonPropsType = {
         background-color:${theme.colors.btnBg};
     } 
 
+ 
 
  /* secondBtn */
 

@@ -44,7 +44,6 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
  background-color:rgba(15,191,97,0.1);
    
-     
     min-height:20vh;
     padding-top:180px;
     padding-bottom:70px;

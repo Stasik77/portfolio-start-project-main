@@ -35,8 +35,9 @@ const StyledWork = styled.div`
     
      display:flex;
      justify-content:space-between;
-     border:1px solid #C4C4C4;
+     border:1px solid #d60505;
      border-radius:30px;
+ 
      
       
       
@@ -57,7 +58,7 @@ const TextWrapper = styled.div`
 const Image = styled.img`
     width:555px;
     height:395px;
-    object-fit:fill;
+     
     /* position:absolute; */
     bottom:90px;
     right:0px;

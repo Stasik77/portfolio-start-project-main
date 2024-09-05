@@ -41,6 +41,8 @@ const StyledHeaderMenu = styled.nav`
         gap:30px;
         justify-content:center;
         position: relative;
+
+        
     }
 
     @media ${theme.media.tablet} {
@@ -57,6 +59,7 @@ const ElipsR = styled.img`
     right:0;
     top:0;
 
+   
 `
 const ElipsL = styled.img`
     position:absolute;
@@ -64,7 +67,11 @@ const ElipsL = styled.img`
     top:0;
     margin-top: 160px;
 
-
+    @media ${theme.media.tablet} {
+         
+        margin-top: 360px;
+    }
+    
 `
  
 

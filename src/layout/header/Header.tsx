@@ -5,7 +5,7 @@ import { Container } from "../../components/Container";
 import { FlexConteiner } from "../../components/FlexConteiner";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
 import { MobileMenu } from "./mobileMenu/MobileMenu";
-
+ 
 
 const items = ["Home", "About", "Service", "My work", "Resume"]
 
@@ -38,5 +38,5 @@ const StyledHeader = styled.header`
     z-index:9999;
      
     
-`
+`  
 

@@ -1,8 +1,7 @@
 import React from "react";
 import { css, styled } from "styled-components";
 import { theme } from "../../../styles/Theme";
-import ilipsImgR from "../../../assets/images/EllipseR.svg"
-import ilipsImgL from "../../../assets/images/EllipseL.svg";
+ 
 
 
 
@@ -36,8 +35,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 </ul>
             </MobileMenuPopup>
 
-            <ElipsR src={ilipsImgR} />
-            <ElipsL src={ilipsImgL} />
+          
         </StyledMobileMenu>
 
     )
@@ -142,22 +140,9 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     };
 
 
-`
+ `
 
-const ElipsR = styled.img`
-    position:absolute;
-    right:0;
-    top:0;
-
-`
-const ElipsL = styled.img`
-    position:absolute;
-    left:0;
-    top:0;
-    margin-top: 160px;
-
-
-`
+ 
 
 
 const Link = styled.a`

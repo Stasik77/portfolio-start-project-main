@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <Container>
 
 
-                <FlexConteiner hidden justify={"space-between"}>
+                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" >
 
                   <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
@@ -125,6 +125,12 @@ text-align:left;
 width: 50%;
 line-height: 167%;
 
+
+@media ${theme.media.mobile} ,${theme.media.mobile} {
+            margin-top: 75px;
+            text-align:center;
+        }
+        
 `
 
 

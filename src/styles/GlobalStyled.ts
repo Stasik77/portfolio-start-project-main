@@ -38,10 +38,16 @@ button {
     border:none
 }
 
+section {
+  padding:150px 0;
+  @media ${theme.media.mobile} {
+    padding:80px 0;
+  }
+}
  
 section:first-child{
  background-color: ${theme.colors.primaryBg};
-}
+} 
 
  
 
