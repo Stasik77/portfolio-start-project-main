@@ -30,7 +30,7 @@ const StyledHeader = styled.header`
     
     
      position:fixed; 
-    padding-top: 25px;
+     padding-top: 25px;
    
     
     left:0;

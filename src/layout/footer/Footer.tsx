@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexConteiner } from "../../components/FlexConteiner";
 import { Container } from "../../components/Container";
+import { theme } from "../../styles/Theme";
 export const Footer = () => {
     return (
         <StyledFooter>
@@ -58,7 +59,12 @@ const Name = styled.span`
 
 const SocialList = styled.ul`
     display:flex;
-    gap:30px
+    gap:30px;
+
+    @media  ,  ${theme.media.mobile}{
+        flex-direction: column;
+    }
+    
 `
 const SocialItem = styled.li`
     

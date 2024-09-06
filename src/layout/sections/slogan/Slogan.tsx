@@ -7,6 +7,7 @@ import { theme } from "../../../styles/Theme";
 import { FlexConteiner } from "../../../components/FlexConteiner";
 import { Footer } from "../../footer/Footer";
 import arrPoligon from "../../../assets/images/Polygon1.svg"
+import { font } from "../../../styles/Common";
 
 export const Slogan = () => {
     return (
@@ -15,7 +16,8 @@ export const Slogan = () => {
                 <FlexConteiner >
                     <SloganWrapper>
                         <SloganText>Have any project in mind?</SloganText>
-                        <SloganTextSecond>Let’s work together and I will help you by all my best.</SloganTextSecond>   </SloganWrapper>
+                        <SloganTextSecond>Let’s work together and I will help you by all my best.</SloganTextSecond> 
+                          </SloganWrapper>
                         <BtnWrapper>
                             <Button secondBtn >Let’s talk</Button>
                         </BtnWrapper>
@@ -58,6 +60,11 @@ const SloganText = styled.p`
     font-weight: 500;
     padding-left: 45px;
 
+   
+   @media ${theme.media.mobile} {
+     ${font({color:theme.colors.btnBg, weight:500, Fmax:20, Fmin:18})} 
+   }
+
 `
 const SloganTextSecond = styled.p`
     font-size:18px;
@@ -65,6 +72,9 @@ const SloganTextSecond = styled.p`
     color:${theme.colors.btnBg};
     padding-top: 25px;
     padding-left: 45px;
+    @media ${theme.media.mobile} {
+     ${font({color:theme.colors.btnBg, weight:500, Fmax:15, Fmin:13})} 
+   }
 
 
 `

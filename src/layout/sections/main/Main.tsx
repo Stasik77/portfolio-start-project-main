@@ -66,7 +66,7 @@ const SmallText = styled.p`
 
 
 const Photo = styled.img`
-    width:548px;
+    width:550px;
     height:390px;
     /* object-fit:cover; */
     /* margin-top:45px; */
@@ -74,8 +74,8 @@ const Photo = styled.img`
      
 
  @media ${theme.media.mobile},${theme.media.tablet} {
-    width:500px;
-    height: 350px;
+    width:350px;
+    height: 250px;
     margin-top:20px ;     
 
  }

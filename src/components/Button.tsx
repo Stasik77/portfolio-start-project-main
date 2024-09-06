@@ -30,7 +30,12 @@ type ButtonPropsType = {
         background-color:${theme.colors.btnBg};
     } 
 
- 
+    @media ${theme.media.mobile} ,${theme.media.tablet} {
+    width:100px;
+    height: 30px;
+    font-size:15px;
+
+    }
 
  /* secondBtn */
 
@@ -49,7 +54,10 @@ type ButtonPropsType = {
         color:${theme.colors.titleText}
     }
 
+  
 
+
+    
     `}  
     
 

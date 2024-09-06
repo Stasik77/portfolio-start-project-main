@@ -98,13 +98,24 @@ const StyledTitle = styled.h2`
         font-weight: 700;
         color: ${theme.colors.titleText};
         padding-bottom: 30px;
+
+        @media ${theme.media.mobile} ,${theme.media.tablet} {
+            margin-top: 85px;
+            font-size: 30px;
+        }
         
+
         
     `
 const StyledImage = styled.img`
     width:280px;
     height: 420px;
     
+    @media ${theme.media.mobile} {
+        width:250px;
+        height: 400px;
+        margin:0 auto;
+    }
     
 
      
@@ -126,9 +137,12 @@ width: 50%;
 line-height: 167%;
 
 
-@media ${theme.media.mobile} ,${theme.media.mobile} {
-            margin-top: 75px;
+@media ${theme.media.mobile} ,${theme.media.tablet} {
+            margin-bottom: 75px;
             text-align:center;
+            margin:0 auto;
+            font-size: 15px;
+            
         }
         
 `
@@ -155,6 +169,12 @@ const ListSkillItem = styled.li`
     padding-bottom:22px;
     align-items:center;
     width:40%;
+
+    @media ${theme.media.mobile} ,${theme.media.tablet} {
+        width:60%;
+            
+        }
+        
      
 
     

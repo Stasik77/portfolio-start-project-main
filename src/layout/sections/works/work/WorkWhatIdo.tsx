@@ -38,7 +38,15 @@ const StyledWork = styled.div`
      border:1px solid #d60505;
      border-radius:30px;
  
-     
+     @media ${theme.media.mobile} {
+        flex-direction:column;
+        align-items:center;
+        gap:60px;
+        
+         
+         
+    }
+   
       
       
 
@@ -53,6 +61,13 @@ const TextWrapper = styled.div`
     padding-left: 50px;
     padding-bottom: 50px;
      
+    @media ${theme.media.mobile} {
+        align-items:center;
+        
+        
+         
+    }
+   
 `
 
 const Image = styled.img`
@@ -64,6 +79,15 @@ const Image = styled.img`
     right:0px;
     position: relative;
     padding-right: 50px;
+
+    @media ${theme.media.mobile} {
+        width:330px;
+        height:255px;
+        padding:0;
+        
+         
+    }
+   
      
 ` 
 //нет бордера  размер картинки не краев 
@@ -75,14 +99,38 @@ const Link = styled.a`
      position: relative;
      color:${theme.colors.primaryText};
       
+
+
      &::after {
         content:url(${arrowLink});
         padding-left: 25px;
         position:absolute;
         top:3px;
-      
-  }
+    
+
+  };
+
+     
+       @media ${theme.media.mobile} ,${theme.media.tablet}{
+        font-size: 15px;
+        text-align:center;
+
+        
+     &::after {
+        content:url(${arrowLink});
+        padding-left: 25px;
+        position:absolute;
+        top:-3px;
+    
+
+  };
+
+    }
 `
+
+
+  
+ 
  
 
 
@@ -104,10 +152,20 @@ const Text = styled.p`
     padding-bottom: 70px;
     text-align:left;
 
+    @media ${theme.media.mobile} {
+        font-size: 15px;
+        text-align:center;
+    }
+
 `
 
 const ImgWrapper = styled.div`
-    display:flex;
+     
+    @media ${theme.media.mobile} {
+        
+         align-items:center;
+    }
+    
     
    
 `

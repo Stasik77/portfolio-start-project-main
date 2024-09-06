@@ -50,7 +50,8 @@ const WorkWrapper = styled.div`
     display:flex;
     min-width:100%;
     margin-bottom: 75px;
-   
+
+  
     
     /* width:1110px; */
     
