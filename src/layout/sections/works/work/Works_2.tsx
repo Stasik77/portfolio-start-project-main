@@ -25,7 +25,7 @@ export const Works_2 = () => {
             <Work_2 src={work_3}/> 
             <Work_2 src={work_4}/> 
             </FlexConteiner>
-            <Button marg={"0 auto"} displayBlock ={"block"}>See More</Button>
+            <Button marg={"60px auto 0 auto "} displayBlock ={"block"}>See More</Button>
             </Container>
         </StyledWorks>
     )
@@ -35,8 +35,6 @@ export const Works_2 = () => {
 
 const StyledWorks = styled.section`
     min-height:100vh;
-    padding-top: 100px;
-     
-     
+    padding-top: 10px;
      
     `

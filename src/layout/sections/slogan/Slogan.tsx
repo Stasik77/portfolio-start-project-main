@@ -12,7 +12,7 @@ import { font } from "../../../styles/Common";
 export const Slogan = () => {
     return (
         <StyledSlogan>
-            <Container secondCont mtop={"160px"}>
+            <Container secondCont >
                 <FlexConteiner >
                     <SloganWrapper>
                         <SloganText>Have any project in mind?</SloganText>
@@ -48,6 +48,8 @@ const BtnWrapper = styled.div`
         top:60px;
         right:300px;
     }
+
+    
     
  `
 
@@ -74,10 +76,12 @@ const SloganTextSecond = styled.p`
     padding-left: 45px;
     @media ${theme.media.mobile} {
      ${font({color:theme.colors.btnBg, weight:500, Fmax:15, Fmin:13})} 
+
    }
 
 
 `
 const StyledSlogan = styled.section`
-     
+     padding:0;
+      
 `

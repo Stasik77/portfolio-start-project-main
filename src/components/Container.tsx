@@ -16,10 +16,7 @@ export const Container = styled.div<ContainerPropsType>`
     /* outline:1px solid #8a2b2b; */
     margin-top:${props => props.mtop};
      
-    
-      
-   
-
+  
  
 
     /* secondCont */

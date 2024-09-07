@@ -61,7 +61,7 @@ const SocialList = styled.ul`
     display:flex;
     gap:30px;
 
-    @media  ,  ${theme.media.mobile}{
+    @media ${theme.media.mobile}{
         flex-direction: column;
     }
     

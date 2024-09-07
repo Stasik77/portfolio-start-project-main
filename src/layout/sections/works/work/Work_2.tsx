@@ -25,9 +25,10 @@ const ImageWork_2 = styled.img`
     border-radius:35px;
 
     @media ${theme.media.mobile} {
-        width:445px;
-        height:200px;
-        padding-top:25px;
+        width:345px;
+        height:270px;
+        /* padding-top:25px; */
+        padding:0;
     }
 
 `

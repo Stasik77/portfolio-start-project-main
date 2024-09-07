@@ -42,6 +42,7 @@ const StyledWork = styled.div`
         flex-direction:column;
         align-items:center;
         gap:60px;
+         
         
          
          
@@ -140,6 +141,7 @@ const Title = styled.p`
     padding-top: 50px;
     text-transform:uppercase;
     
+    
      
      
 `
@@ -155,6 +157,7 @@ const Text = styled.p`
     @media ${theme.media.mobile} {
         font-size: 15px;
         text-align:center;
+        width:60vw;
     }
 
 `

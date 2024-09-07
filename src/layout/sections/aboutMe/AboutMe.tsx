@@ -84,7 +84,7 @@ const PhotoWrapper = styled.div`
 const StyledWorks = styled.section`
     min-height:100%;
     display:flex;
-    padding-top: 170px;
+    /* padding-top: 170px; */
     padding-bottom: 115px;
     
 
