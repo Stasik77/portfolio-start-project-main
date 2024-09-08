@@ -41,6 +41,7 @@ const StyledWork = styled.div`
      @media ${theme.media.mobile} {
         flex-direction:column;
         align-items:center;
+         
         gap:60px;
          
         
@@ -85,6 +86,7 @@ const Image = styled.img`
         width:330px;
         height:255px;
         padding:0;
+        
         
          
     }
@@ -131,9 +133,6 @@ const Link = styled.a`
 
 
   
- 
- 
-
 
 
 const Title = styled.p`
@@ -157,7 +156,9 @@ const Text = styled.p`
     @media ${theme.media.mobile} {
         font-size: 15px;
         text-align:center;
-        width:60vw;
+        width:65vw;
+        text-align:left;
+        padding-bottom: 20px;
     }
 
 `

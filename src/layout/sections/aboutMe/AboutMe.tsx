@@ -142,6 +142,7 @@ line-height: 167%;
             text-align:center;
             margin:0 auto;
             font-size: 15px;
+            width:70vw;
             
         }
         

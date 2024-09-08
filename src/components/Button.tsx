@@ -34,6 +34,7 @@ type ButtonPropsType = {
     width:100px;
     height: 30px;
     font-size:15px;
+    margin-top:0px;
 
     }
 
@@ -55,7 +56,8 @@ type ButtonPropsType = {
     }
 
   
-
+ 
+    
 
     
     `}  

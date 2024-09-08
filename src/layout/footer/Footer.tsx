@@ -49,7 +49,10 @@ const StyledFooter = styled.footer`
     padding-top:180px;
     padding-bottom:70px;
     
-
+    @media ${theme.media.mobile}{
+         
+    }
+    
 
 `
 
@@ -61,10 +64,7 @@ const SocialList = styled.ul`
     display:flex;
     gap:30px;
 
-    @media ${theme.media.mobile}{
-        flex-direction: column;
-    }
-    
+   
 `
 const SocialItem = styled.li`
     
@@ -75,5 +75,8 @@ const SocialLink = styled.a`
 const Copyight = styled.small`
     font-size:18px;
     font-weight: 500;
-
+    @media ${theme.media.mobile}{
+        font-size:10px;
+    }
+    
 `

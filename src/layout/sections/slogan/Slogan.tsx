@@ -35,7 +35,9 @@ const SloganWrapper = styled.div`
      flex-direction:column;
      width: 80%;
      /* position:relative; */
-      
+     @media ${theme.media.mobile} {
+        height:30vh;
+   }
    
 `
 const BtnWrapper = styled.div`
@@ -76,7 +78,7 @@ const SloganTextSecond = styled.p`
     padding-left: 45px;
     @media ${theme.media.mobile} {
      ${font({color:theme.colors.btnBg, weight:500, Fmax:15, Fmin:13})} 
-
+       
    }
 
 
