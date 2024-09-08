@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <Container>
 
 
-                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" >
+                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center">
 
                   <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
@@ -62,8 +62,8 @@ export const AboutMe = () => {
 
 
 const PhotoWrapper = styled.div`
-    position: relative;
-    z-index:0;
+        position: relative;
+        z-index:0;
         margin-top:85px;
         margin-left: 85px;
 
@@ -110,11 +110,12 @@ const StyledTitle = styled.h2`
 const StyledImage = styled.img`
     width:280px;
     height: 420px;
+    max-width:100%;
     
-    @media ${theme.media.mobile} {
+    @media ${theme.media.mobile} ,${theme.media.tablet}  {
         width:250px;
         height: 400px;
-        margin:0 auto;
+        
     }
     
 
@@ -134,7 +135,7 @@ font-weight: 400;
 color:${theme.colors.font};
 text-align:left;
 width: 50%;
-line-height: 167%;
+ 
 
 
 @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -143,6 +144,7 @@ line-height: 167%;
             margin:0 auto;
             font-size: 15px;
             width:70vw;
+
             
         }
         

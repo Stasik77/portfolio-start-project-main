@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-
+import { theme } from "../styles/Theme";
 
 type FlexConteinerPropsType = {
     direction?: string
@@ -7,7 +7,7 @@ type FlexConteinerPropsType = {
     align?: string
     wrap?: string
     gap?: string
-     
+    justifyCent?: string
     paddingbt?: string
      
     
@@ -24,7 +24,10 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     /* border:2px solid green; */
     padding-bottom:${props => props.paddingbt};
      
-     
+    @media ${theme.media.tablet}{
+          /* border:2px solid green; */
+          justify-content: ${props => props.justifyCent || "flex-start"};
+        }
    
 
 `

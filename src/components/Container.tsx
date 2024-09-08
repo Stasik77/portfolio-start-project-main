@@ -33,6 +33,8 @@ export const Container = styled.div<ContainerPropsType>`
     border-radius:15px;
     position:relative;
     top:45px;
+
+    
     
 `
     }

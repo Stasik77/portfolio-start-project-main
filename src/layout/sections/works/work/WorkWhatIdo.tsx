@@ -31,14 +31,14 @@ export const WorkWhatIdo = (props:WorkPropsType) => {
 const StyledWork = styled.div`
    
      max-width:1100px;
-     width:100%;
+     max-width:100%;
     
      display:flex;
      justify-content:space-between;
      border:1px solid #d60505;
      border-radius:30px;
  
-     @media ${theme.media.mobile} {
+     @media ${theme.media.mobile}, ${theme.media.tablet} {
         flex-direction:column;
         align-items:center;
          
@@ -63,7 +63,7 @@ const TextWrapper = styled.div`
     padding-left: 50px;
     padding-bottom: 50px;
      
-    @media ${theme.media.mobile} {
+    @media ${theme.media.mobile} ,${theme.media.tablet} {
         align-items:center;
         
         

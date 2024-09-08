@@ -19,11 +19,11 @@ export const Works_2 = () => {
             <SectionServisTitile>Portfolio</SectionServisTitile>
             <SectionTitle>My recent works</SectionTitle>
             <Menu menuItems={worksIitems}></Menu>
-            <FlexConteiner align="center" direction={"row"} wrap={"wrap"} gap={"23px"} paddingbt={'60px'} >  
+            <FlexConteiner align="center" direction={"row"} wrap={"wrap"} gap={"23px"}  justifyCent="center" >  
             <Work_2 src={work_1}/> 
             <Work_2 src={work_2}/> 
             <Work_2 src={work_3}/> 
-            <Work_2 src={work_4}/> 
+            <Work_2 src={work_1}/> 
             </FlexConteiner>
             <Button marg={"60px auto 0 auto "} displayBlock ={"block"}>See More</Button>
             </Container>

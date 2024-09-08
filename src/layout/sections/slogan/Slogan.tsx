@@ -76,7 +76,7 @@ const SloganTextSecond = styled.p`
     color:${theme.colors.btnBg};
     padding-top: 25px;
     padding-left: 45px;
-    @media ${theme.media.mobile} {
+    @media ${theme.media.mobile}  {
      ${font({color:theme.colors.btnBg, weight:500, Fmax:15, Fmin:13})} 
        
    }

@@ -21,14 +21,17 @@ export const Work_2 =(props:Work_2PropsType) =>{
 const ImageWork_2 = styled.img`
     width:545px;
     height:350px;
+    max-width:100%;
     /* object-fit:none; */
     border-radius:35px;
 
-    @media ${theme.media.mobile} {
+    @media ${theme.media.tablet}{
         width:345px;
         height:270px;
-        /* padding-top:25px; */
+        padding-top:25px;
         padding:0;
+        /* max-width:100%; */
+       border:2px solid red;
     }
 
 `

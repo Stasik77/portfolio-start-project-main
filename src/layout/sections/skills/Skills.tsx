@@ -102,6 +102,7 @@ const WrapperSkill = styled.div`
 display:flex;
 flex-direction:column;
 align-items:start;
+ 
 
 
     
@@ -115,12 +116,12 @@ const SkillTitle = styled.h3`
     font-weight: 500;
     font-size: 20px;
     padding: 10px;
-  
+     
     
 `
 
 const SkillText = styled.p`
-    font-size:20px;
+    /* font-size:20px; */
     font-weight: 500;
      
     

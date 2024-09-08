@@ -48,7 +48,7 @@ const StyledWorks = styled.section`
 const WorkWrapper = styled.div`
     /* border:1px solid red; */
     display:flex;
-    min-width:100%;
+    max-width:100%;
     margin-bottom: 75px;
 
   

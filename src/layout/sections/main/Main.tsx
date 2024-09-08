@@ -10,7 +10,7 @@ export const Main =() => {
     return(
         <StyledMain>
             <Container>
-            <FlexConteiner  align={"center"} justify={"space-between"} wrap="wrap" >
+            <FlexConteiner  align={"center"} justify={"space-between"} wrap="wrap" justifyCent="center" >
             <MainWrapper>
                 <SmallText>Hello, I’m</SmallText>
                 <Name>Stanislav Golovanov</Name>
@@ -41,11 +41,11 @@ const PhotoWrapper = styled.div`
 const MainWrapper = styled.div`
     display:flex;
     flex-direction:column;
-    width:50%;
+    width:40%;
      
      
     @media ${theme.media.mobile},${theme.media.tablet} {
-         margin:0 auto;
+         /* margin:0 auto; */
     }
 `
  
@@ -71,12 +71,14 @@ const Photo = styled.img`
     /* object-fit:cover; */
     /* margin-top:45px; */
     border-radius:25px;
-     
+    max-width:100%;
 
- @media ${theme.media.mobile},${theme.media.tablet} {
+ @media ${theme.media.tablet} {
     width:350px;
     height: 250px;
-    margin-top:20px ;     
+    padding-top: 25px;
+    /* margin:0 auto;    */
+    
 
  }
      
