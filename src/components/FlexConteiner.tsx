@@ -24,8 +24,8 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     /* border:2px solid green; */
     padding-bottom:${props => props.paddingbt};
      
-    @media ${theme.media.tablet}{
-          /* border:2px solid green; */
+    @media ${theme.media.tablet}, ${theme.media.tablet}{
+          border:2px solid green;
           justify-content: ${props => props.justifyCent || "flex-start"};
         }
    

@@ -19,7 +19,7 @@ export const Works_2 = () => {
             <SectionServisTitile>Portfolio</SectionServisTitile>
             <SectionTitle>My recent works</SectionTitle>
             <Menu menuItems={worksIitems}></Menu>
-            <FlexConteiner align="center" direction={"row"} wrap={"wrap"} gap={"23px"}  justifyCent="center" >  
+            <FlexConteiner align="center" justify={"center"}  direction={"row"} wrap={"wrap"} gap={"23px"}  justifyCent="center" >  
             <Work_2 src={work_1}/> 
             <Work_2 src={work_2}/> 
             <Work_2 src={work_3}/> 

@@ -18,7 +18,7 @@ export const WorksWhatIDo = () => {
     return (
         <StyledWorks>
             <Container> 
-            <FlexConteiner direction={"column"} align={"center"} gap="100px" >
+            <FlexConteiner direction={"column"} align={"center"} gap="100px"  justifyCent="center">
                
                 <WorkWrapper>
                     <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />

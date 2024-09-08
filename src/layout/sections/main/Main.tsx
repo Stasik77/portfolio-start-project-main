@@ -71,13 +71,12 @@ const Photo = styled.img`
     /* object-fit:cover; */
     /* margin-top:45px; */
     border-radius:25px;
-    max-width:100%;
+    /* max-width:100%; */
 
  @media ${theme.media.tablet} {
     width:350px;
     height: 250px;
-    padding-top: 25px;
-    /* margin:0 auto;    */
+    margin-top: 25px; 
     
 
  }

@@ -16,7 +16,7 @@ export const Skills = () => {
             <Container>
                 <SectionServisTitile>My service</SectionServisTitile>
                 <SectionTitle>What I Do </SectionTitle>
-                <FlexConteiner justify={"space-between"} wrap="wrap" align="center">
+                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" > 
                     <SkillsWrapper>
                         <ImgUx src={imgUx} />
                         <WrapperSkill>
