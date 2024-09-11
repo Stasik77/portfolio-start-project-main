@@ -11,9 +11,10 @@ import { font } from "../styles/Common";
 export const SectionTitle = styled.h2`
 ${font({weight:700,Fmax:40,Fmin:32})}
 text-align: center;
+padding-top: 30px;
  
 color:${theme.colors.titleText};
-padding-bottom: 98px;
+padding-bottom: 60px;
     
 `
 export const SectionServisTitile = styled.p`

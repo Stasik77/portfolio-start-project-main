@@ -29,7 +29,7 @@ const StyledMain = styled.section`
 background-color:rgba(15,191,97,0.1);
 /* display:flex;  */
  /* min-width:1440px;  */
-padding-bottom: 50px;
+padding-bottom: 130px;
 padding-top: 150px;
 
 `
@@ -45,7 +45,7 @@ const MainWrapper = styled.div`
      
      
     @media ${theme.media.mobile},${theme.media.tablet} {
-         /* margin:0 auto; */
+         margin:0 auto;
     }
 `
  
@@ -59,7 +59,7 @@ const SmallText = styled.p`
     padding-top: 15px;
      
 
-    ${font({weight:400,Fmax:30, Fmin:20,})}
+    ${font({color:theme.colors.primasyBtn, weight:400,Fmax:30, Fmin:20,})}
     
 `
 
@@ -87,7 +87,7 @@ const Photo = styled.img`
 const Name = styled.h1`
 ${font({family:"'Poppins' ,sans-serif",weight:700,Fmax:60, Fmin:36,})}
 
-margin-bottom:145px;
+margin-bottom:70px;
 margin-right: 125px;
 margin-top: 7px;
 /* font-family: "Poppins" ,sans-serif; */

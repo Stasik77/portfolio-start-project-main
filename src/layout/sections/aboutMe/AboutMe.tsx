@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <Container>
 
 
-                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center">
+                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center" marg="0 0 0 50px " padding="0 28px 0 0 ">
 
                   <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
@@ -24,7 +24,8 @@ export const AboutMe = () => {
                         <StyledTitle>
                             About Me
                         </StyledTitle>
-                        Hello! My name is Stanislav Golovanov and I am a <SpanColor> UX/UI designer </SpanColor>and <SpanColor>Front End Developer</SpanColor>.I enjoy creating things that live on the internet. An experienced Software Engineer with a demonstrated history of working in the Computer Software industry. Skilled in Web Design, UX/UI design, and Front-end Development. Specialize in Information Security and software engineering, creating dynamic and beautiful web pages. I have been in the field for nearly 5 years, and have been loving every minute of it.
+                        <StylrdMainText> 
+                        Hello! My name is Stanislav Golovanov and I am a <SpanColor> UX/UI designer </SpanColor>and <SpanColor>Front End Developer</SpanColor>.I enjoy creating things that live on the internet. An experienced Software Engineer with a demonstrated history of working in the Computer Software industry. Skilled in Web Design, UX/UI design, and Front-end Development. Specialize in Information Security and software engineering, creating dynamic and beautiful web pages. I have been in the field for nearly 5 years, and have been loving every minute of it. </StylrdMainText>
 
                         <ListText>Here are a few technologies I’ve been working with recently:</ListText>
                         {/* <FlexConteiner> */}
@@ -98,15 +99,34 @@ const StyledTitle = styled.h2`
         font-weight: 700;
         color: ${theme.colors.titleText};
         padding-bottom: 30px;
+        font-family:"Roboto";
+         
 
         @media ${theme.media.mobile} ,${theme.media.tablet} {
             margin-top: 85px;
             font-size: 30px;
+            
         }
+      
+    `
+
+    const StylrdMainText = styled.p`
         
+font-size: 18px;
+font-weight: 400;
+color:${theme.colors.font};
+text-align:left;
+padding-top: 10px;
+padding-left: 5px;
+font-family:"Roboto";
+width:100%; 
+
 
         
-    `
+`
+    
+
+
 const StyledImage = styled.img`
     width:280px;
     height: 420px;
@@ -135,13 +155,13 @@ font-weight: 400;
 color:${theme.colors.font};
 text-align:left;
 width: 50%;
- 
+font-family:"Roboto";
 
 
 @media ${theme.media.mobile} ,${theme.media.tablet} {
             margin-bottom: 75px;
-            text-align:center;
-            margin:0 auto;
+            text-align:left;
+            /* margin:0 auto; */
             font-size: 15px;
             width:70vw;
 
@@ -160,7 +180,12 @@ flex-wrap:wrap;
 width:100%;
  
 
-
+@media ${theme.media.mobile} ,${theme.media.tablet} {
+    flex-direction:row;
+    flex-wrap:wrap;
+       width:100%;
+        }
+        
 
     
 `
@@ -173,11 +198,11 @@ const ListSkillItem = styled.li`
     align-items:center;
     width:40%;
 
-    @media ${theme.media.mobile} ,${theme.media.tablet} {
+    /* @media ${theme.media.mobile} ,${theme.media.tablet} {
         width:60%;
             
-        }
-        
+        } */
+     
      
 
     

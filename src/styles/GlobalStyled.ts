@@ -39,7 +39,7 @@ button {
 }
 
 section {
-  padding:150px 0;
+  padding:80px 0;
   @media ${theme.media.mobile}, ${theme.media.tablet} {
     padding:80px 0;
   }

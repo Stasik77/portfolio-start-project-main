@@ -75,7 +75,8 @@ const SkillsWrapper = styled.div`
     gap:20px;
     position: relative;
     align-items:start;
-    padding: 25px;
+    padding: 25px 0px ;
+    margin-left: 50px;
 
  &::before {
     content:'';
@@ -121,7 +122,7 @@ const SkillTitle = styled.h3`
 `
 
 const SkillText = styled.p`
-    /* font-size:20px; */
+    font-size:20px;
     font-weight: 500;
      
     
