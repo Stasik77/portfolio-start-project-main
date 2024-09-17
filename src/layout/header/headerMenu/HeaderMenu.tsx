@@ -38,7 +38,7 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
 const StyledHeaderMenu = styled.nav`
     ul {
         display:flex;
-        gap:30px;
+        gap:50px;
         justify-content:center;
         position: relative;
 

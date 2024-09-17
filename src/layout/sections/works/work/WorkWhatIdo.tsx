@@ -137,7 +137,7 @@ const Link = styled.a`
 
 const Title = styled.p`
     font-size: 16px;
-    padding-top: 50px;
+    padding-top: 75px;
     text-transform:uppercase;
     
     
@@ -148,11 +148,12 @@ const Title = styled.p`
 const Text = styled.p`
     font-size: 35px;
     font-weight: bold;
-    padding-top: 30px;
+    padding-top: 25px;
      font-family:"Roboto";
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     text-align:left;
     width: 90%;;
+    line-height: 150%;
 
     @media ${theme.media.mobile} ,${theme.media.tablet} {
         font-size: 15px;

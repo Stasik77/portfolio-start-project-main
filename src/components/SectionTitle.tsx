@@ -14,14 +14,14 @@ text-align: center;
 /* padding-top: 30px; */
  
 color:${theme.colors.titleText};
-padding-bottom: 55px;
+padding-bottom: 90px;
     
 `
 export const SectionServisTitile = styled.p`
     text-align: center;
     font-size:18px;
     padding-bottom: 16px; 
-    padding-top:25px;
+    /* padding-top:25px; */
     color:${theme.colors.font};
 `
 

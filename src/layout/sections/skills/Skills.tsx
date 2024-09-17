@@ -75,8 +75,11 @@ const SkillsWrapper = styled.div`
     gap:20px;
     position: relative;
     align-items:start;
-    padding: 25px 0px ;
-    margin-left: 50px;
+    justify-content:space-between;
+    /* padding: 25px 0px ; */
+    /* margin-left: 50px; */
+    /* padding-top: 25px; */
+     
 
  &::before {
     content:'';
@@ -88,6 +91,9 @@ const SkillsWrapper = styled.div`
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background: rgba(79, 184, 128, 0.2);
     padding: 25px;
+     
+     
+    
 
     position:absolute;
     /* left:10% */
@@ -103,6 +109,8 @@ const WrapperSkill = styled.div`
 display:flex;
 flex-direction:column;
 align-items:start;
+/* padding-left: 10px; */
+width: 60%;
  
 
 
@@ -124,6 +132,7 @@ const SkillTitle = styled.h3`
 const SkillText = styled.p`
     font-size:20px;
     font-weight: 500;
+    line-height: 150%;
 
     @media ${theme.media.mobile} , ${theme.media.mobile} {
         font-size:15px;

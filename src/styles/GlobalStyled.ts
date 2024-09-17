@@ -40,7 +40,7 @@ button {
 }
 
 section {
-  padding:80px 0;
+  padding:70px 0;
   @media ${theme.media.mobile}, ${theme.media.tablet} {
     padding:0;
   }

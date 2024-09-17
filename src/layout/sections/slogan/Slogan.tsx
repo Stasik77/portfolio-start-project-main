@@ -13,7 +13,7 @@ export const Slogan = () => {
     return (
         <StyledSlogan>
             <Container secondCont >
-                <FlexConteiner >
+                <FlexConteiner  marg ="20px 0 0 0">
                     <SloganWrapper>
                         <SloganText>Have any project in mind?</SloganText>
                         <SloganTextSecond>Let’s work together and I will help you by all my best.</SloganTextSecond> 

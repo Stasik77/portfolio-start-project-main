@@ -86,7 +86,7 @@ const StyledWorks = styled.section`
     min-height:100%;
     display:flex;
     /* padding-top: 170px; */
-    padding-bottom: 115px;
+    /* padding-bottom: 115px; */
     @media ${theme.media.mobile}, ${theme.media.tablet}{
         padding-bottom: 0px;
           
@@ -100,8 +100,9 @@ const StyledTitle = styled.h2`
         font-size: 40px;
         font-weight: 700;
         color: ${theme.colors.titleText};
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         font-family:"Roboto";
+        padding-top: 10px;
          
 
         @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -183,6 +184,7 @@ justify-content:space-around;
 flex-wrap:wrap;
 width:100%;
 padding-bottom: 15px;
+gap: 10px;
  
 
 @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -217,7 +219,7 @@ const ListSkillItem = styled.li`
 
 
 const ListText = styled.p`
-    margin-top:20px;
+    /* margin-top:20px; */
     margin-bottom: 20px;
 
 `
