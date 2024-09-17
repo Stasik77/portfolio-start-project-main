@@ -7,6 +7,7 @@ type ButtonPropsType = {
     bgcolor?: string
     color?: string
     secondBtn?: boolean
+    thirdBtn?: boolean
     paddingleft?: string
     marg?:string
     displayBlock?:string
@@ -43,26 +44,44 @@ type ButtonPropsType = {
 
      ${props => props.secondBtn && css<ButtonPropsType>`
         
-     background-color:${props => props.bgcolor  || theme.colors.btnBg };
+    background-color:${props => props.bgcolor  || theme.colors.btnBg };
     border-radius:50px;
     color:${props =>props.color || theme.colors.primasyBtnText};
-    width:170px;
+    width:150px;
     height: 55px;
+     
+    
     
     
     &:hover {
         background-color:${theme.colors.font};
         color:${theme.colors.titleText}
     }
-
-  
- 
-    
-
-    
     `}  
     
 
+//   thirdBtn //  
+
+     ${props => props.thirdBtn && css<ButtonPropsType>`
+        
+        background-color:${props => props.bgcolor  || theme.colors.titleText }; 
+    border-radius:50px;
+    color:${props =>props.color || theme.colors.primasyBtnText};
+    width:215px;
+    height: 55px;
+    font-size:20px;
+    /* padding-left:${props => props.paddingleft}; */
+    margin:${props => props.marg};
+    display:${props => props.displayBlock};
+
+    
+     `}
+
+
 `
+
+
+
+
 
 // как задавать разные цвета кнопке ????

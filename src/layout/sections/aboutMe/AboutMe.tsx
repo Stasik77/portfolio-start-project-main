@@ -15,7 +15,7 @@ export const AboutMe = () => {
             <Container>
 
 
-                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center" marg="0 0 0 50px " padding="0 28px 0 0 ">
+                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center" marg="0 0 0 50px " padding="15px 28px 0 0 " margMedia = "0 0 0 0 ">
 
                   <PhotoWrapper> 
                     <StyledImage src={imgMe} alt="" />
@@ -25,7 +25,7 @@ export const AboutMe = () => {
                             About Me
                         </StyledTitle>
                         <StylrdMainText> 
-                        Hello! My name is Stanislav Golovanov and I am a <SpanColor> UX/UI designer </SpanColor>and <SpanColor>Front End Developer</SpanColor>.I enjoy creating things that live on the internet. An experienced Software Engineer with a demonstrated history of working in the Computer Software industry. Skilled in Web Design, UX/UI design, and Front-end Development. Specialize in Information Security and software engineering, creating dynamic and beautiful web pages. I have been in the field for nearly 5 years, and have been loving every minute of it. </StylrdMainText>
+                        Hello! My name is Stanislav Golovanov and I am a <SpanColor> UX/UI designer </SpanColor>and <SpanColor>Front End Developer</SpanColor>.<SpanBolt>I enjoy creating things that live on the internet.</SpanBolt>  An experienced Software Engineer with a demonstrated history of working in the Computer Software industry. Skilled in Web Design, UX/UI design, and Front-end Development. Specialize in Information Security and software engineering, creating dynamic and beautiful web pages. I have been in the field for nearly 5 years, and have been loving every minute of it. </StylrdMainText>
 
                         <ListText>Here are a few technologies I’ve been working with recently:</ListText>
                         {/* <FlexConteiner> */}
@@ -35,16 +35,16 @@ export const AboutMe = () => {
                                 Angular
                             </ListSkillItem>
                             <ListSkillItem>
-                                HTML
+                                Bootstrap 4,5 
                             </ListSkillItem>
                             <ListSkillItem>
-                                Figma
+                                 HTML
                             </ListSkillItem>
                             <ListSkillItem>
-                                Bootstrap 4,5
+                                   CSS,SASS
                             </ListSkillItem>
                             <ListSkillItem>
-                                CSS,SASS
+                            Figma
                             </ListSkillItem>
                             <ListSkillItem>
                                 Adobe XD
@@ -87,8 +87,10 @@ const StyledWorks = styled.section`
     display:flex;
     /* padding-top: 170px; */
     padding-bottom: 115px;
-    
-
+    @media ${theme.media.mobile}, ${theme.media.tablet}{
+        padding-bottom: 0px;
+          
+        }
     /* border:1px solid blue; */
     
      
@@ -105,7 +107,7 @@ const StyledTitle = styled.h2`
         @media ${theme.media.mobile} ,${theme.media.tablet} {
             margin-top: 85px;
             font-size: 30px;
-            
+ 
         }
       
     `
@@ -117,9 +119,11 @@ font-weight: 400;
 color:${theme.colors.font};
 text-align:left;
 padding-top: 10px;
-padding-left: 5px;
+/* padding-left: 5px; */
+padding-bottom: 15px;
 font-family:"Roboto";
 width:100%; 
+line-height: 167%;
 
 
         
@@ -130,7 +134,7 @@ width:100%;
 const StyledImage = styled.img`
     width:280px;
     height: 420px;
-    max-width:100%;
+     
     
     @media ${theme.media.mobile} ,${theme.media.tablet}  {
         width:250px;
@@ -178,6 +182,7 @@ flex-direction:row;
 justify-content:space-around;
 flex-wrap:wrap;
 width:100%;
+padding-bottom: 15px;
  
 
 @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -218,5 +223,9 @@ const ListText = styled.p`
 `
 
 const SpanColor = styled.span`
-    color:${theme.colors.titleText}
+    color:${theme.colors.titleText};
+`
+
+const SpanBolt = styled.span`
+    font-weight:700;
 `

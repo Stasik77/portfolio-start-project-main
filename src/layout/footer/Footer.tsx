@@ -5,22 +5,23 @@ import { Icon } from "../../components/icon/Icon";
 import { FlexConteiner } from "../../components/FlexConteiner";
 import { Container } from "../../components/Container";
 import { theme } from "../../styles/Theme";
+import { StyledIcon } from "../../components/icon/Icon";
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container> 
-            <FlexConteiner direction={"row"}  justify="space-between">
+            <FlexConteiner direction={"row"}  justify="space-between" padding="35px 0 0 0">
                 {/* <Name>Stanislav</Name> */}
                 <Copyight>Designed and developed by Rostam Sadiqi 2021</Copyight>
                 <SocialList>
                     <SocialItem>
                         <SocialLink href="#">
-                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="instagram" />
+                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="instagram"  />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink href="#">
-                            <Icon height={"25px"} width={"25px"} viewBox={"0 0 25px 25px"} iconId="ball" />
+                            <Icon height={"25px"} width={"25px"} viewBox={"0 0 25px 25px"} iconId="ball"  />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
@@ -34,14 +35,14 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
-
-
             </FlexConteiner>
             </Container>
         </StyledFooter>
     )
 }
 
+ 
+ 
 const StyledFooter = styled.footer`
  background-color:rgba(15,191,97,0.1);
    
@@ -49,12 +50,13 @@ const StyledFooter = styled.footer`
     padding-top:180px;
     padding-bottom:70px;
     
-    @media ${theme.media.mobile}{
-         
+    @media ${theme.media.mobile}, ${theme.media.mobile}{
+        padding-top:100px;
     }
     
 
 `
+ 
 
 const Name = styled.span`
     
@@ -62,21 +64,31 @@ const Name = styled.span`
 
 const SocialList = styled.ul`
     display:flex;
-    gap:30px;
+    gap:20px;
 
    
 `
 const SocialItem = styled.li`
-    
+
+ 
 `
-const SocialLink = styled.a`
+const SocialLink = styled.a` 
+
+
+
+
+
+ `
+
     
-`
+
 const Copyight = styled.small`
     font-size:18px;
     font-weight: 500;
-    @media ${theme.media.mobile}{
+    @media ${theme.media.mobile}, ${theme.media.tablet}{
         font-size:10px;
+        padding-right: 15px;
+        width:50%;
     }
     
 `

@@ -28,6 +28,8 @@ const StyledMenu = styled.nav`
         gap:40px;
         justify-content:center;
         padding-bottom: 95px;
+        font-size: 18px;
+        
          
         
     }

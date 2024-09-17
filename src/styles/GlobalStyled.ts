@@ -17,6 +17,7 @@ export const GlobalStyled = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height:1.2;
+   min-width:360px;
 }
 
 code {
@@ -41,7 +42,7 @@ button {
 section {
   padding:80px 0;
   @media ${theme.media.mobile}, ${theme.media.tablet} {
-    padding:80px 0;
+    padding:0;
   }
 }
  

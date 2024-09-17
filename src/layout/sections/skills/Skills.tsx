@@ -16,7 +16,7 @@ export const Skills = () => {
             <Container>
                 <SectionServisTitile>My service</SectionServisTitile>
                 <SectionTitle>What I Do </SectionTitle>
-                <FlexConteiner justify={"space-between"} wrap="wrap" align="center" > 
+                <FlexConteiner justify={"space-around"} wrap="wrap" align="center"   > 
                     <SkillsWrapper>
                         <ImgUx src={imgUx} />
                         <WrapperSkill>
@@ -124,6 +124,11 @@ const SkillTitle = styled.h3`
 const SkillText = styled.p`
     font-size:20px;
     font-weight: 500;
+
+    @media ${theme.media.mobile} , ${theme.media.mobile} {
+        font-size:15px;
+        
+    }
      
     
 

@@ -25,7 +25,7 @@ export const Works_2 = () => {
             <Work_2 src={work_3}/> 
             <Work_2 src={work_1}/> 
             </FlexConteiner>
-            <Button marg={"60px auto 0 auto "} displayBlock ={"block"}>See More</Button>
+            <Button marg={"95px auto 0 auto "} displayBlock ={"block"} thirdBtn>See More </Button>
             </Container>
         </StyledWorks>
     )

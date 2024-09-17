@@ -49,7 +49,7 @@ const WorkWrapper = styled.div`
     /* border:1px solid red; */
     display:flex;
     max-width:100%;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
 
   
     

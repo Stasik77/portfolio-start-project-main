@@ -43,6 +43,8 @@ const SloganWrapper = styled.div`
 const BtnWrapper = styled.div`
     display:block;
     align-content:center;
+    padding-left: 20px;
+    padding-top: 20px;
 
     & ::before {
         content:url(${arrPoligon});
@@ -58,14 +60,14 @@ const BtnWrapper = styled.div`
 
 const SloganText = styled.p`
     text-align:left;
-    padding-top: 70px;
+    padding-top: 80px;
     font-size: 45px;
     color:${theme.colors.btnBg};
     font-weight: 500;
     padding-left: 45px;
 
    
-   @media ${theme.media.mobile} {
+   @media ${theme.media.mobile},${theme.media.tablet} {
      ${font({color:theme.colors.btnBg, weight:500, Fmax:20, Fmin:18})} 
    }
 

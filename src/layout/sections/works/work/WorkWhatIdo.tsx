@@ -65,7 +65,7 @@ const TextWrapper = styled.div`
      
     @media ${theme.media.mobile} ,${theme.media.tablet} {
         align-items:center;
-        
+        width:40%;
         
          
     }
@@ -82,7 +82,7 @@ const Image = styled.img`
     position: relative;
     padding-right: 50px;
 
-    @media ${theme.media.mobile} {
+    @media ${theme.media.mobile} ,${theme.media.tablet}{
         width:330px;
         height:255px;
         padding:0;
@@ -149,16 +149,18 @@ const Text = styled.p`
     font-size: 35px;
     font-weight: bold;
     padding-top: 30px;
-     
-    padding-bottom: 70px;
+     font-family:"Roboto";
+    padding-bottom: 80px;
     text-align:left;
+    width: 90%;;
 
-    @media ${theme.media.mobile} {
+    @media ${theme.media.mobile} ,${theme.media.tablet} {
         font-size: 15px;
         text-align:center;
         width:65vw;
-        text-align:left;
+        /* text-align:left; */
         padding-bottom: 20px;
+         
     }
 
 `

@@ -1,4 +1,5 @@
 import { css, styled } from "styled-components";
+import { theme } from "../styles/Theme";
 
 
 type ContainerPropsType = {
@@ -33,8 +34,10 @@ export const Container = styled.div<ContainerPropsType>`
     border-radius:15px;
     position:relative;
     top:45px;
-
-    
+ 
+    @media ${theme.media.mobile} , ${theme.media.mobile} {
+        min-height:200px;
+    }
     
 `
     }

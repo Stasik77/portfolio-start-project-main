@@ -10,7 +10,10 @@ type FlexConteinerPropsType = {
     justifyCent?: string
     padding?: string
     marg?: string
-     
+    margMedia?: string
+    directionMedia?: string
+    alignMedia?: string
+    widthMedia?: string
     
 
 }
@@ -22,13 +25,17 @@ export const FlexConteiner = styled.div<FlexConteinerPropsType>`
     flex-wrap: ${props =>props.wrap || "nowrap"};
     height:100%;
     gap:${props => props.gap};
-    border:2px solid green;
+    /* border:2px solid green; */
     padding:${props => props.padding};
     margin: ${props => props.marg};
      
-    @media ${theme.media.tablet}, ${theme.media.tablet}{
+    @media ${theme.media.mobile}, ${theme.media.tablet}{
           /* border:2px solid green; */
           justify-content: ${props => props.justifyCent || "flex-start"};
+          margin: ${props => props.margMedia};
+          width: ${props => props.widthMedia};
+          
+          
         }
    
 
