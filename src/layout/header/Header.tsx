@@ -1,42 +1,45 @@
 import React from "react";
-import styled from "styled-components";
 import { Logo } from "../../components/logo/logo";
 import { Container } from "../../components/Container";
 import { FlexConteiner } from "../../components/FlexConteiner";
-import { HeaderMenu } from "./headerMenu/HeaderMenu";
-import { MobileMenu } from "./mobileMenu/MobileMenu";
- 
+import { DesktopMenu} from "./menu/desktopMenu/DesktopMenu";
+import { MobileMenu } from "./menu/mobileMenu/MobileMenu";
+import {S} from "./Header_Styles"
 
 const items = ["Home", "About", "Service", "My work", "Resume"]
 
-export const Header = () => {
+export const Header: React.FC = () => {
+
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    
+    React.useEffect(() => {
+       
+        window.addEventListener("resize", () => setWidth(window.innerWidth));
+    
+       
+      }, []);
+
+
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FlexConteiner justify={"space-between"} align={"center"}  >
                     <Logo />
-                    <HeaderMenu menuItems={items} />
-                    <MobileMenu menuItems={items} />
+
+
+                    {width < breakpoint ?<MobileMenu menuItems={items} />  
+                                        :<DesktopMenu menuItems={items} />}
+                    
+                   
                 </FlexConteiner>
                 
 
             </Container>
 
-        </StyledHeader>
+        </S.Header>
     );
 };
 
-const StyledHeader = styled.header`
-    
-    
-     position:fixed; 
-     padding-top: 25px;
-   
-    
-    left:0;
-    right:0;
-    z-index:9999;
-     
-    
-`  
-
+ 
