@@ -1,6 +1,4 @@
 import React from "react";
-import { styled } from "styled-components";
-import { Icon } from "../../../components/icon/Icon";
 import { SectionServisTitile, SectionTitle } from "../../../components/SectionTitle";
 // import { Skill } from "./skill/Skill";
 import { FlexConteiner } from "../../../components/FlexConteiner";
@@ -8,43 +6,47 @@ import { Container } from "../../../components/Container";
 import imgUx from "../../../assets/images/ux1.svg"
 import imgFrontDev from "../../../assets/images/ux2.svg"
 import imgDesing from "../../../assets/images/ux3.svg"
-import { theme } from "../../../styles/Theme";
+import {S} from"./skill/Skill_Styles";
+ 
 
-export const Skills = () => {
+
+ 
+
+export const Skills: React.FC = () => {
     return (
-        <StyledSkills>
+        <S.Skills>
             <Container>
                 <SectionServisTitile>My service</SectionServisTitile>
                 <SectionTitle>What I Do </SectionTitle>
                 <FlexConteiner justify={"space-around"} wrap="wrap" align="center"  margMedia ="0 0 45px 0" > 
-                    <SkillsWrapper>
-                        <ImgUx src={imgUx} />
-                        <WrapperSkill>
-                            <SkillTitle>
+                    <S.SkillsWrapper>
+                        <S.ImgUx src={imgUx} />
+                        <S.WrapperSkill>
+                            <S.SkillTitle>
                                 01
-                            </SkillTitle>
-                            <SkillText>UX/UI Design</SkillText>
-                        </WrapperSkill>
-                    </SkillsWrapper>
-                    <SkillsWrapper>
-                        <ImgUx src={imgFrontDev} />
-                        <WrapperSkill>
-                            <SkillTitle>
+                            </S.SkillTitle>
+                            <S.SkillText>UX/UI Design</S.SkillText>
+                        </S.WrapperSkill>
+                    </S.SkillsWrapper>
+                    <S.SkillsWrapper>
+                        <S.ImgUx src={imgFrontDev} />
+                        <S.WrapperSkill>
+                            <S.SkillTitle>
                                 02
-                            </SkillTitle>
-                            <SkillText>Front End Development </SkillText>
-                        </WrapperSkill>
-                    </SkillsWrapper>
-                    <SkillsWrapper>
-                        <ImgUx src={imgDesing} />
-                        <WrapperSkill>
-                            <SkillTitle>
+                            </S.SkillTitle>
+                            <S.SkillText>Front End Development </S.SkillText>
+                        </S.WrapperSkill>
+                    </S.SkillsWrapper>
+                    <S.SkillsWrapper>
+                        <S.ImgUx src={imgDesing} />
+                        <S.WrapperSkill>
+                            <S.SkillTitle>
                                 03
-                            </SkillTitle>
-                            <SkillText>Responsive Design</SkillText>
-                        </WrapperSkill>
+                            </S.SkillTitle>
+                            <S.SkillText>Responsive Design</S.SkillText>
+                        </S.WrapperSkill>
 
-                    </SkillsWrapper>
+                    </S.SkillsWrapper>
 
 
 
@@ -59,86 +61,7 @@ export const Skills = () => {
                        description={"Responsive Design"} /> */}
                 </FlexConteiner>
             </Container>
-        </StyledSkills>
+        </S.Skills>
     );
 };
 
-
-const StyledSkills = styled.section`
-    
-
-/* min-height:100%; */
-
-`
-const SkillsWrapper = styled.div`
-    display:flex;
-    gap:20px;
-    position: relative;
-    align-items:start;
-    justify-content:space-between;
-    /* padding: 25px 0px ; */
-    /* margin-left: 50px; */
-    /* padding-top: 25px; */
-     
-
- &::before {
-    content:'';
-    display:inline-block;
-    border: 1px solid #000;
-    border-radius: 20px;
-    width: 120px;
-    height: 120px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    background: rgba(79, 184, 128, 0.2);
-    padding: 25px;
-     
-     
-    
-
-    position:absolute;
-    /* left:10% */
-    /* top:50%; */
-    transform-origin: top left;
-
-        
-    
- }
-    
-`
-const WrapperSkill = styled.div`
-display:flex;
-flex-direction:column;
-align-items:start;
-/* padding-left: 10px; */
-width: 60%;
- 
-
-
-    
-`
-const ImgUx = styled.img`
-   padding: 25px;
-   
-`
-const SkillTitle = styled.h3`
-    color:${theme.colors.font};
-    font-weight: 500;
-    font-size: 20px;
-    padding: 10px;
-     
-    
-`
-
-const SkillText = styled.p`
-    font-size:20px;
-    font-weight: 500;
-    line-height: 150%;
-
-    @media ${theme.media.mobile} , ${theme.media.mobile} {
-        font-size:15px;
-        
-    }
-     
-    
-
-`

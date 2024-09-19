@@ -9,8 +9,25 @@ import frontImg from "./../../../../src/assets/images/front-skill.png"
 import designImg from "./../../../../src/assets/images/desig-skill.png"
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { text } from "stream/consumers";
+import { url } from "inspector";
 
+const worksData = [
+    {
+        title: "UX/ ui design",
+        text:"Research, Design, Prototype, and Animation",
+        img: url("./../../../../src/assets/images/ux-skill.png"),
+    },
+    {
+        title: "Front end development",
+        text:"Implement UX design into live and user friendly",
+    },
+    {
+        title: "responsive design",
+        text:"I build landing pages and responsive websites and web App",
+    },
 
+];
 
 
 
@@ -20,6 +37,15 @@ export const WorksWhatIDo = () => {
             <Container> 
             <FlexConteiner direction={"column"} align={"center"} gap="100px"  justifyCent="center">
                
+               {worksData.map((w)=> {
+                return  <WorkWhatIdo title={w.title} 
+                                      text={w.text} 
+                                      src={w.img} />
+
+
+               })}
+
+
                 <WorkWrapper>
                     <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
                 </WorkWrapper>
@@ -34,16 +60,16 @@ export const WorksWhatIDo = () => {
 
             </FlexConteiner>
             </Container>
-        </StyledWorks>
+        // </StyledWorks>
     )
 }
 
-const StyledWorks = styled.section`
-    min-height:100vh;
+   const StyledWorks = styled.section`
+   min-height:100vh;
      
    
   
-`
+ `
 
 const WorkWrapper = styled.div`
     /* border:1px solid red; */
