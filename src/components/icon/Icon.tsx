@@ -15,7 +15,7 @@ type IconPropsType = {
     StyledIcon?: boolean
 }
 
-export const Icon =(props:IconPropsType) => {
+export const Icon:React.FC<IconPropsType> =(props:IconPropsType) => {
     return (
 
         
