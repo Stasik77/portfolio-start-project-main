@@ -26,9 +26,9 @@ export const Icon:React.FC<IconPropsType> =(props:IconPropsType) => {
     );
     
 };
-
+  
  
-export const StyledIcon = styled(Icon)` 
+export const StyledIcon = styled(Icon)`  
 width: ${props => props.mobileSize}; 
 height: ${props => props.mobileSize}; 
  
