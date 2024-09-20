@@ -6,89 +6,53 @@ import { FlexConteiner } from "../../components/FlexConteiner";
 import { Container } from "../../components/Container";
 import { theme } from "../../styles/Theme";
 import { StyledIcon } from "../../components/icon/Icon";
-export const Footer = () => {
+import { S } from "./Footer_Styles";
+
+
+const socialItemsData = [
+   {
+     iconId:"instagram",
+
+   },
+   {
+    iconId:"ball",
+
+  },
+  {
+    iconId:"be",
+
+  },
+  {
+    iconId:"in",
+
+  },
+
+
+
+];
+
+export const Footer:React.FC = () => {
     return (
-        <StyledFooter>
+        <S.Footer>
             <Container> 
             <FlexConteiner direction={"row"}  justify="space-between" padding="35px 0 0 0">
                 {/* <Name>Stanislav</Name> */}
-                <Copyight>Designed and developed by Rostam Sadiqi 2021</Copyight>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink href="#">
-                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="instagram"  />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink href="#">
-                            <Icon height={"25px"} width={"25px"} viewBox={"0 0 25px 25px"} iconId="ball"  />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink href="#">
-                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="be" />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink href="#">
-                            <Icon height={"23px"} width={"23px"} viewBox={"0 0 23px 23px"} iconId="in" />
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
+                <S.Copyight>Designed and developed by Rostam Sadiqi 2021</S.Copyight>
+                <S.SocialList>
+                    {socialItemsData.map((s ,index:number) => {
+                            return  (<S.SocialItem key={index}>
+                            <S.SocialLink href="#">
+                                <Icon height={"25px"} width={"25px"} viewBox={"0 0 25px 25px"} iconId={s.iconId} />
+                            </S.SocialLink>
+                        </S.SocialItem>
+                        )
+                    })}                
+                </S.SocialList>
             </FlexConteiner>
             </Container>
-        </StyledFooter>
+        </S.Footer>
     )
 }
 
  
- 
-const StyledFooter = styled.footer`
- background-color:rgba(15,191,97,0.1);
-   
-    min-height:20vh;
-    padding-top:180px;
-    padding-bottom:70px;
-    
-    @media ${theme.media.mobile}, ${theme.media.mobile}{
-        padding-top:100px;
-    }
-    
-
-`
- 
-
-const Name = styled.span`
-    
-`
-
-const SocialList = styled.ul`
-    display:flex;
-    gap:20px;
-
-   
-`
-const SocialItem = styled.li`
-
- 
-`
-const SocialLink = styled.a` 
-
-
-
-
-
- `
-
-    
-
-const Copyight = styled.small`
-    font-size:18px;
-    font-weight: 500;
-    @media ${theme.media.mobile}, ${theme.media.tablet}{
-        font-size:10px;
-        padding-right: 15px;
-        width:50%;
-    }
-    
-`
+  

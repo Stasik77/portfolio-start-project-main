@@ -8,61 +8,51 @@ import uxDesignImg from "./../../../../src/assets/images/ux-skill.png"
 import frontImg from "./../../../../src/assets/images/front-skill.png"
 import designImg from "./../../../../src/assets/images/desig-skill.png"
 import { Container } from "../../../components/Container";
-import { theme } from "../../../styles/Theme";
-import { text } from "stream/consumers";
-import { url } from "inspector";
+
+
 
 const worksData = [
     {
         title: "UX/ ui design",
         text:"Research, Design, Prototype, and Animation",
-        img: url("./../../../../src/assets/images/ux-skill.png"),
+        src: uxDesignImg 
     },
     {
         title: "Front end development",
         text:"Implement UX design into live and user friendly",
+        src: frontImg 
     },
     {
         title: "responsive design",
         text:"I build landing pages and responsive websites and web App",
+        src: designImg 
     },
 
 ];
 
 
 
-export const WorksWhatIDo = () => {
+export const WorksWhatIDo:React.FC = () => {
     return (
         <StyledWorks>
             <Container> 
             <FlexConteiner direction={"column"} align={"center"} gap="100px"  justifyCent="center">
                
-               {worksData.map((w)=> {
+                {worksData.map((w)=> {
                 return  <WorkWhatIdo title={w.title} 
-                                      text={w.text} 
-                                      src={w.img} />
+                                     text={w.text} 
+                                     src={w.src}/>
 
 
-               })}
+              })}
 
 
-                <WorkWrapper>
-                    <WorkWhatIdo title={"UX/ ui design"} text={"Research, Design, Prototype, and Animation"} src={uxDesignImg} />
-                </WorkWrapper>
-
-                <WorkWrapper>
-                    <WorkWhatIdo title={"Front end development"} text={"Implement UX design into live and user friendly "} src={frontImg} />
-                </WorkWrapper>
-
-                <WorkWrapper>
-                    <WorkWhatIdo title={"responsive design"} text={"I build landing pages and responsive websites and web App"} src={designImg} />
-                </WorkWrapper>
-
+               
             </FlexConteiner>
             </Container>
         // </StyledWorks>
-    )
-}
+    );
+};
 
    const StyledWorks = styled.section`
    min-height:100vh;

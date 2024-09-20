@@ -30,7 +30,6 @@ const StyledMenu = styled.nav`
         padding-bottom: 95px;
         font-size: 18px;
         
-         
         
     }
 

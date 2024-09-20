@@ -8,84 +8,24 @@ import { FlexConteiner } from "../../../components/FlexConteiner";
 import { Footer } from "../../footer/Footer";
 import arrPoligon from "../../../assets/images/Polygon1.svg"
 import { font } from "../../../styles/Common";
+import { S } from "./Slogan_Styles";
 
-export const Slogan = () => {
+export const Slogan:React.FC = () => {
     return (
-        <StyledSlogan>
+        <S.Slogan>
             <Container secondCont >
                 <FlexConteiner  marg ="20px 0 0 0">
-                    <SloganWrapper>
-                        <SloganText>Have any project in mind?</SloganText>
-                        <SloganTextSecond>Let’s work together and I will help you by all my best.</SloganTextSecond> 
-                          </SloganWrapper>
-                        <BtnWrapper>
+                    <S.SloganWrapper>
+                        <S.SloganText>Have any project in mind?</S.SloganText>
+                        <S.SloganTextSecond>Let’s work together and I will help you by all my best.</S.SloganTextSecond> 
+                          </S.SloganWrapper>
+                        <S.BtnWrapper>
                             <Button secondBtn >Let’s talk</Button>
-                        </BtnWrapper>
+                        </S.BtnWrapper>
                 </FlexConteiner>
             </Container>
-        </StyledSlogan>
+        </S.Slogan>
     )
 }
 
-const SloganWrapper = styled.div`
-    
-    border-radius:15px;
-    height: 250px;
-    display:flex;
-     flex-direction:column;
-     width: 80%;
-     /* position:relative; */
-     @media ${theme.media.mobile} {
-        height:30vh;
-   }
-   
-`
-const BtnWrapper = styled.div`
-    display:block;
-    align-content:center;
-    padding-left: 20px;
-    padding-top: 20px;
-
-    & ::before {
-        content:url(${arrPoligon});
-        position:absolute;
-        top:60px;
-        right:300px;
-    }
-
-    
-    
- `
-
-
-const SloganText = styled.p`
-    text-align:left;
-    padding-top: 80px;
-    font-size: 45px;
-    color:${theme.colors.btnBg};
-    font-weight: 500;
-    padding-left: 45px;
-
-   
-   @media ${theme.media.mobile},${theme.media.tablet} {
-     ${font({color:theme.colors.btnBg, weight:500, Fmax:20, Fmin:18})} 
-   }
-
-`
-const SloganTextSecond = styled.p`
-    font-size:18px;
-    font-weight: 500;
-    color:${theme.colors.btnBg};
-    padding-top: 25px;
-    padding-left: 45px;
-    @media ${theme.media.mobile}  {
-     ${font({color:theme.colors.btnBg, weight:500, Fmax:15, Fmin:13})} 
-       
-   }
-
-
-`
-const StyledSlogan = styled.section`
-     padding:0;
-      
-`
+ 

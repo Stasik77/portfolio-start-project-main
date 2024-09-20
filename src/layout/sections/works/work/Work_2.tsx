@@ -7,7 +7,7 @@ type Work_2PropsType = {
     [x: string]: string | undefined;
      
 }
-export const Work_2 =(props:Work_2PropsType) =>{
+export const Work_2:React.FC<Work_2PropsType> =(props:Work_2PropsType) =>{
     return (
         <ImageWork_2 src={props.src}/>
         
