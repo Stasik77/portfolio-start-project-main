@@ -1,11 +1,8 @@
 import React from "react";
-
-import { styled } from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { FlexConteiner } from "../../components/FlexConteiner";
 import { Container } from "../../components/Container";
-import { theme } from "../../styles/Theme";
-import { StyledIcon } from "../../components/icon/Icon";
+ 
 import { S } from "./Footer_Styles";
 
 
