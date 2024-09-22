@@ -7,7 +7,7 @@ import { theme } from "../../../styles/Theme";
 import imgLi from "./../../../../src/assets/images/arrow.svg"
 import { Logo } from "../../../components/logo/logo";
 import { S } from "./AboutMe_Styles";
-
+import Tilt from 'react-parallax-tilt';
 
 
 export const AboutMe: React.FC = () => {
@@ -20,7 +20,9 @@ export const AboutMe: React.FC = () => {
                 <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center" marg="0 0 0 50px " padding="15px 28px 0 0 " margMedia = "0 0 0 0 ">
 
                   <S.PhotoWrapper> 
-                    <S.Image src={imgMe} alt="" />
+                  <Tilt>
+                  <S.Image src={imgMe} alt="" />
+                    </Tilt>
                     </S.PhotoWrapper>
                     <S.Text>
                         <S.Title>

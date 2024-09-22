@@ -12,7 +12,7 @@ import { Menu } from "../../../../components/menu/Menu";
 import { Button } from "../../../../components/Button";
 
 const worksIitems = ["All", "UX/UI Design", "Web Design", "Front End Development",]
-export const Works_2 = () => {
+export const Works_2:React.FC= () => {
     return (
         <StyledWorks>
             <Container>

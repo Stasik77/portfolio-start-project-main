@@ -62,10 +62,10 @@ const Photo = styled.img`
 `
 
 
-const Name = styled.h1`
+const Name = styled.h2`
 ${font({family:"'Poppins' ,sans-serif",weight:700,Fmax:60, Fmin:36,})}
 
-margin-bottom:70px;
+margin-bottom:40px;
 margin-right: 125px;
 margin-top: 7px;
 /* font-family: "Poppins" ,sans-serif; */
@@ -75,14 +75,31 @@ color: #000;
 text-align:left;
     
 
+
+ 
 @media ${theme.media.mobile}, ${theme.media.tablet}{
     margin-top:17px;
     margin-bottom: 15px;
+    width: 100%;
 
 }
 
 `
+const Skill = styled.h1`
+text-transform:uppercase;
+text-align:left;
+padding-bottom:20px;
 
+p {
+    display:none
+}
+
+
+
+@media ${theme.media.mobile}, {
+ font-size:11px;
+}
+` 
  
 export const S = {
      Main,
@@ -91,4 +108,5 @@ export const S = {
     SmallText,
     PhotoWrapper,
     MainWrapper,
+    Skill
 }
