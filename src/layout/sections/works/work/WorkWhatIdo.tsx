@@ -1,7 +1,4 @@
 import React from "react";
-import { styled } from "styled-components";
-import { theme } from "../../../../styles/Theme";
-import arrowLink from "../../../../assets/images/arrowLink.svg"
 import { S } from "./WorkWhatiDo_Styles";
 
 type WorkPropsType = {

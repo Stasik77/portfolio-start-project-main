@@ -50,7 +50,7 @@ export const WorksWhatIDo:React.FC = () => {
                
             </FlexConteiner>
             </Container>
-        // </StyledWorks>
+         </StyledWorks>
     );
 };
 

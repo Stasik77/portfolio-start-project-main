@@ -32,8 +32,6 @@ export const Main: React.FC = () => {
                     <Tilt>
                          <S.Photo src={photo} alt="myphoto" />
                     </Tilt>
-                    
-
                 </FlexConteiner>
             </Container>
         </S.Main>
