@@ -30,13 +30,16 @@ const SocialList = styled.ul`
 `
 const SocialItem = styled.li`
 
+&:hover {
+    transform:rotate(20deg) ;
+    transition:0.3s;
+}
 
 `
 const SocialLink = styled.a` 
 
 
-
-
+ 
 
 `
 

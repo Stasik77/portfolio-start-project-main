@@ -28,7 +28,8 @@ type ButtonPropsType = {
 
     
     &:hover {
-        background-color:${theme.colors.btnBg};
+        background-color:${theme.colors.btnBgHover};
+        transition: 0.3s;
     } 
 
     @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -46,7 +47,7 @@ type ButtonPropsType = {
         
     background-color:${props => props.bgcolor  || theme.colors.btnBg };
     border-radius:50px;
-    color:${props =>props.color || theme.colors.primasyBtnText};
+    color:${props =>props.color || theme.colors.titleText};
     width:150px;
     height: 55px;
      
@@ -54,8 +55,10 @@ type ButtonPropsType = {
     
     
     &:hover {
-        background-color:${theme.colors.font};
-        color:${theme.colors.titleText}
+        background-color:${theme.colors.primasyBtnText};
+        color:${theme.colors.btnBg};
+        transition:0.3s;
+         
     }
     `}  
     
@@ -64,7 +67,7 @@ type ButtonPropsType = {
 
      ${props => props.thirdBtn && css<ButtonPropsType>`
         
-        background-color:${props => props.bgcolor  || theme.colors.titleText }; 
+    background-color:${props => props.bgcolor  || theme.colors.titleText }; 
     border-radius:50px;
     color:${props =>props.color || theme.colors.primasyBtnText};
     width:215px;

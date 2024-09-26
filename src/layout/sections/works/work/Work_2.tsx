@@ -25,6 +25,10 @@ const ImageWork_2 = styled.img`
     /* object-fit:none; */
     border-radius:35px;
 
+    &:hover {
+        transform:rotate(0.5deg) ;
+    }
+
     @media ${theme.media.tablet}{
         width:345px;
         height:270px;

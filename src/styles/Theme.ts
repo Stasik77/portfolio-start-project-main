@@ -7,6 +7,7 @@ export const theme = {
         font:"#494949",
         titleText: "#0FBF61",
         btnBg:"#ffffff",
+        btnBgHover:"rgba(15,191,97,0.5)",
          
 },
 

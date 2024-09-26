@@ -71,14 +71,19 @@ const Image = styled.img`
 ` 
 //нет бордера  размер картинки не краев 
 
-const Link = styled.a`
+const 
+Link = styled.a`
   
      font-size: 20px;
      font-weight: 500;
      position: relative;
      color:${theme.colors.primaryText};
       
-
+     &:hover {
+        color:${theme.colors.titleText};
+        transition:0.3s;
+    
+     }
 
      &::after {
         content:url(${arrowLink});

@@ -1,7 +1,7 @@
 import { styled } from "styled-components"
 import { theme } from "../../../styles/Theme"
 import { font } from "../../../styles/Common"
-
+// import EllipR from ""
 
 const  Main = styled.section`
 background-color:rgba(15,191,97,0.1);
@@ -20,6 +20,8 @@ const MainWrapper = styled.div`
     display:flex;
     flex-direction:column;
     width:40%;
+
+   
      
      
     @media ${theme.media.mobile},${theme.media.tablet} {

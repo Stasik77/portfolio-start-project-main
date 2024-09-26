@@ -19,7 +19,10 @@ export const Icon:React.FC<IconPropsType> =(props:IconPropsType) => {
     return (
 
         
-            <svg width= {props.width || "50"}  height= {props.height || "50"} viewBox={props.viewBox || "0 0 50 50" }  fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg 
+            width= {props.width || "50"}  
+            height= {props.height || "50"} 
+            viewBox={props.viewBox || "0 0 50 50" }  fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlinkHref={ `${IconsSprite}#${props.iconId}`}/>
             </svg>
       
@@ -28,9 +31,14 @@ export const Icon:React.FC<IconPropsType> =(props:IconPropsType) => {
 };
   
  
-export const StyledIcon = styled(Icon)`  
-width: ${props => props.mobileSize}; 
-height: ${props => props.mobileSize}; 
+export const StyledIcon = styled(Icon)` 
+ 
+width: ${props => props.width}; 
+height: ${props => props.height}; 
+@media ${theme.media.mobile} {
+    width: 50px; 
+height:50px; 
+}
  
 `
 
