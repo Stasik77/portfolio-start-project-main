@@ -7,7 +7,7 @@ import { Button } from "../../../components/Button";
 import { S } from "./Main_Styles";
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
-
+ 
 
 export const Main: React.FC = () => {
     return (

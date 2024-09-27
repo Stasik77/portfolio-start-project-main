@@ -1,7 +1,8 @@
 import { styled } from "styled-components"
 import { theme } from "../../../styles/Theme"
 import { font } from "../../../styles/Common"
-// import EllipR from ""
+import ellipR from "../../../../src/assets/images/EllipseR.svg"
+import ellipL from "../../../../src/assets/images/EllipseL.svg"
 
 const  Main = styled.section`
 background-color:rgba(15,191,97,0.1);
@@ -23,12 +24,11 @@ const MainWrapper = styled.div`
 
    
      
-     
     @media ${theme.media.mobile},${theme.media.tablet} {
          margin:0 auto;
     }
-`
- 
+
+ `
 
 const SmallText = styled.p`
     color:${theme.colors.primasyBtn};
@@ -75,14 +75,46 @@ margin-top: 7px;
 /* font-size: 60px; */
 color: #000;
 text-align:left;
+
+
+&::before {
+        content:url(${ellipL});
+        left:-10px;
+        position:absolute;
+        display:inline-block;
+
+
+        @media ${theme.media.mobile}, ${theme.media.tablet}{
+            display:none;
     
 
+}
+    
+}
+    
+&::after {
+        content:url(${ellipR});
+        right:0%;
+        position:absolute;
+        top:0%;
+        
+        @media ${theme.media.mobile}, ${theme.media.tablet}{
+            display:none;
+    
+
+}
+
+        
+    
+}
+    
 
  
 @media ${theme.media.mobile}, ${theme.media.tablet}{
     margin-top:17px;
     margin-bottom: 15px;
     width: 100%;
+    
 
 }
 

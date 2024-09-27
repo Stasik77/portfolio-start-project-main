@@ -1,8 +1,6 @@
 import { css, styled } from "styled-components"
 import { theme } from "../../../../styles/Theme"
  
-
-
 //   Menu //
 
 
@@ -11,6 +9,10 @@ const Link = styled.a`
     font-weight: 500;
     font-size: 18px;
     color:transparent; 
+
+
+
+    
 `
 
 const Mask = styled.span`
@@ -50,6 +52,8 @@ position:relative;
     z-index:1;
     transform:scale(0)
 }
+
+
 
 &:hover {
     &::before {
