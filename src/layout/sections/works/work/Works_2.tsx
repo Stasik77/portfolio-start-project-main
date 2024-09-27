@@ -11,7 +11,7 @@ import { SectionServisTitile, SectionTitle } from "../../../../components/Sectio
 import { Menu, StatusType } from "../../../../components/menu/Menu";
 import { Button } from "../../../../components/Button";
 
-// const worksIitems = ["All", "UX/UI Design", "Web Design", "Front End Development",]
+ 
 
 const worksIitems: Array<{ status: StatusType, title: string }> = [
     {
@@ -87,7 +87,7 @@ export const Works_2: React.FC = () => {
     console.log(filteredWorks)
 
     return (
-        <StyledWorks>
+        <StyledWorks id={"mywork"}>
             <Container>
                 <SectionServisTitile>Portfolio</SectionServisTitile>
                 <SectionTitle>My recent works</SectionTitle>

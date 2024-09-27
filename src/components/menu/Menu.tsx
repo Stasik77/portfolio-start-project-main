@@ -42,7 +42,7 @@ export const Menu = (props:MunePropsType) => {
 
      &:hover {
         color:${theme.colors.titleText};
-        
+        text-decoration:underline;
         transition:0.3s;
          
     }

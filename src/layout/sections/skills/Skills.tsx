@@ -14,7 +14,7 @@ import {S} from"./skill/Skill_Styles";
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id={"service"}>
             <Container>
                 <SectionServisTitile>My service</SectionServisTitile>
                 <SectionTitle>What I Do </SectionTitle>

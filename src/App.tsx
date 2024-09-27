@@ -1,5 +1,6 @@
 import './App.css';
 import { Container } from './components/Container';
+import { Particle } from './components/particle/Particle';
 import { Footer } from './layout/footer/Footer';
 import { Header } from './layout/header/Header';
 import { AboutMe } from './layout/sections/aboutMe/AboutMe';
@@ -15,7 +16,7 @@ import { WorksWhatIDo } from './layout/sections/works/WorksWhatIDo';
 function App() {
     return (
         <div className="App">
-            
+            <Particle/>
             <Header/>           
              <Main />
             <AboutMe />

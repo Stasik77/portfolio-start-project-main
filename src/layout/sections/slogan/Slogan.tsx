@@ -12,7 +12,7 @@ import { S } from "./Slogan_Styles";
 
 export const Slogan:React.FC = () => {
     return (
-        <S.Slogan>
+        <S.Slogan id = {"resume"}>
             <Container secondCont >
                 <FlexConteiner  marg ="20px 0 0 0">
                     <S.SloganWrapper>

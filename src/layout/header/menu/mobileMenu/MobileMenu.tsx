@@ -6,7 +6,7 @@ import {S} from "./../headerMenu/HeaderMenu_Styles"
 
 
 
-export const MobileMenu: React.FC< {menuItems: Array<string>}> = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC= () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     const onBurgerBtnClick = () => {setMenuIsOpen(!menuIsOpen)}
     return (
@@ -19,7 +19,7 @@ export const MobileMenu: React.FC< {menuItems: Array<string>}> = (props: { menuI
 
 
             <S.MobileMenuPopup isOpen={menuIsOpen} onClick={() => {setMenuIsOpen(false)}}>
-            <Menu menuItems={props.menuItems} />
+            <Menu/>
             </S.MobileMenuPopup>
 
           

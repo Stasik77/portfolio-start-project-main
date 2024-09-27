@@ -13,10 +13,8 @@ import Tilt from 'react-parallax-tilt';
 export const AboutMe: React.FC = () => {
     return (
 
-        <S.Works>
+        <S.Works id={"about"}>
             <Container>
-
-
                 <FlexConteiner justify={"space-between"} wrap="wrap" align="center" justifyCent = "center" marg="0 0 0 50px " padding="15px 28px 0 0 " margMedia = "0 0 0 0 ">
 
                   <S.PhotoWrapper> 

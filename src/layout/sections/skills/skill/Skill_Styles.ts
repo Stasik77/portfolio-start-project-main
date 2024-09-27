@@ -2,9 +2,9 @@ import { styled } from "styled-components"
 import { theme } from "../../../../styles/Theme"
 
 const Skills = styled.section`
-    
+    position: relative;
 
-min-height:100%;
+/* min-height:100%; */
 
 `
 const SkillsWrapper = styled.div`

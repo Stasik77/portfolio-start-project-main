@@ -1,19 +1,8 @@
 import { css, styled } from "styled-components"
 import { theme } from "../../../../styles/Theme"
+import { Link } from "react-scroll"
  
 //   Menu //
-
-
-const Link = styled.a`
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color:transparent; 
-
-
-
-    
-`
 
 const Mask = styled.span`
 position:absolute;
@@ -25,6 +14,7 @@ overflow-y:hidden;
 /* outline: 1px solid red; */
 color: ${theme.colors.primaryText};
 
+
 & + & {
     top:50%;
     span {
@@ -34,26 +24,16 @@ color: ${theme.colors.primaryText};
     }
 }
 
+&:hover {
+    color: ${theme.colors.titleText};
+}
     
 `
- 
+
 const MenuItem = styled.li`
 position:relative;
 
-&::before {
-    content:"";
-    display:inline-block;
-    height:3px;
-    background-color:black;
-    position:absolute;
-    top:50%;
-    left:-10px;
-    right:-10px;
-    z-index:1;
-    transform:scale(0)
-}
-
-
+ 
 
 &:hover {
     &::before {
@@ -62,28 +42,89 @@ position:relative;
     ${Mask} {
         
     transform:skewX(10deg) ;
-    color:${theme.colors.font}
+    color:${theme.colors.titleText};
   
+
     
 
      ${Mask} + ${Mask} {
         transform:skewX(10deg) ;
  
     } 
-    
+    &:hover {
+    color: ${theme.colors.titleText};
+}
 }
 }
 
 `
+
+
  
-//  MobileMenu // 
-
-
 const MobileMenu = styled.nav`
    
      
 
 `
+
+
+const NavLink = styled(Link)`
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color:transparent; 
+
+    &::before {
+    content:"";
+    display:inline-block;
+    height:3px;
+    background-color:black;
+
+    position:absolute;
+    top:50%;
+    left:-10px;
+    right:-10px;
+
+    z-index:1;
+
+    transform:scale(0);
+    }
+
+
+    &:hover, &.active {
+    &::before {
+        transform:scale(1);
+    }
+    ${Mask} {
+        
+    transform:skewX(10deg) ;
+    color:${theme.colors.titleText};
+  
+
+    
+
+     ${Mask} + ${Mask} {
+        transform:skewX(10deg) ;
+ 
+    } 
+    &:hover {
+    color: ${theme.colors.titleText};
+}
+}
+}
+}
+
+
+
+    
+`
+
+ 
+ 
+//  MobileMenu // 
+
+
+ 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         position: fixed;
         top:0;
@@ -192,38 +233,16 @@ const DesktopMenu = styled.nav`
 
 `
 
-const ElipsR = styled.img`
-    position:absolute;
-    right:0;
-    top:0;
-
-   
-`
-const ElipsL = styled.img`
-    position:absolute;
-    left:0;
-    top:0;
-    margin-top: 160px;
-
-    @media ${theme.media.tablet} {
-         
-        margin-top: 360px;
-    }
-    
-`
-
-
+ 
  
 
-
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,
     MobileMenuPopup,
     BurgerButton,
     DesktopMenu,
-    ElipsR,
-    ElipsL,
+    
 }

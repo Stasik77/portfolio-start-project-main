@@ -5,7 +5,7 @@ import { theme } from "../../styles/Theme"
  
 const Footer = styled.footer`
 background-color:rgba(15,191,97,0.1);
-  
+position: relative;
    min-height:20vh;
    padding-top:180px;
    padding-bottom:70px;
