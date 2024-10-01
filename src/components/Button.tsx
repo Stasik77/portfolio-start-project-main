@@ -29,7 +29,8 @@ type ButtonPropsType = {
     
     &:hover {
         background-color:${theme.colors.btnBgHover};
-        transition: 0.3s;
+        transition:${theme.animations.transition};
+        cursor:pointer;
     } 
 
     @media ${theme.media.mobile} ,${theme.media.tablet} {
@@ -57,7 +58,8 @@ type ButtonPropsType = {
     &:hover {
         background-color:${theme.colors.primasyBtnText};
         color:${theme.colors.btnBg};
-        transition:0.3s;
+        transition:${theme.animations.transition};
+
          
     }
     `}  

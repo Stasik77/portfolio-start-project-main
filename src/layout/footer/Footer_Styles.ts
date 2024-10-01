@@ -32,7 +32,7 @@ const SocialItem = styled.li`
 
 &:hover {
     transform:rotate(20deg) ;
-    transition:0.3s;
+    transition:${theme.animations.transition};
 }
 
 `

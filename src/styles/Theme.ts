@@ -17,11 +17,17 @@ export const theme = {
     mobile: "screen and (max-width: 576px)",
      
 
+ },
+
+ animations: {
+    transition: ".2s ease-in-out"
  }
+ 
+
+};
 
 
-}
-
+ 
 
 
 

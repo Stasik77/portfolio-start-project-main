@@ -1,7 +1,7 @@
 import { css, styled } from "styled-components"
 import { theme } from "../../../../styles/Theme"
 import { Link } from "react-scroll"
- 
+
 //   Menu //
 
 const Mask = styled.span`
@@ -13,7 +13,8 @@ height:50%;
 overflow-y:hidden;
 /* outline: 1px solid red; */
 color: ${theme.colors.primaryText};
-
+transition:${theme.animations.transition};
+cursor:pointer;
 
 & + & {
     top:50%;
@@ -23,6 +24,7 @@ color: ${theme.colors.primaryText};
 
     }
 }
+
 
 &:hover {
     color: ${theme.colors.titleText};
@@ -60,7 +62,7 @@ position:relative;
 `
 
 
- 
+
 const MobileMenu = styled.nav`
    
      
@@ -88,7 +90,9 @@ const NavLink = styled(Link)`
     z-index:1;
 
     transform:scale(0);
+    transition:${theme.animations.transition}
     }
+    
 
 
     &:hover, &.active {
@@ -112,19 +116,19 @@ const NavLink = styled(Link)`
 }
 }
 }
-}
+
 
 
 
     
 `
 
- 
- 
+
+
 //  MobileMenu // 
 
 
- 
+
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         position: fixed;
         top:0;
@@ -132,25 +136,33 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         right:0;
         bottom:0;
         z-index:99999;
-        background-color:rgba(32, 32, 94, 0.9);
+        background-color:rgb(21 190 153 / 90%);
         display:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transform: translateY(-100%);
+        transition:.8s ease-in-out;
 
-        ${props => props.isOpen && css<{ isOpen: boolean }>`
-            display:flex;
-            justify-content:center;
-            align-items:center;
-        
-        `}
+      
 
 
     ul {
         display:flex;
-        gap:30px;
+        gap:10px;
         justify-content:center;
-        
         flex-direction:column;
         align-items:center;
+        transition:.8s ease-in-out;
     }
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
+           transform: translateY(0);
+& ul {
+    gap :50px
+}
+           
+           `}
 `
 const BurgerButton = styled.button<{ isOpen: boolean }>`
     position:fixed;
@@ -233,8 +245,8 @@ const DesktopMenu = styled.nav`
 
 `
 
- 
- 
+
+
 
 export const S = {
     NavLink,
@@ -244,5 +256,5 @@ export const S = {
     MobileMenuPopup,
     BurgerButton,
     DesktopMenu,
-    
+
 }

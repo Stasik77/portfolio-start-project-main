@@ -37,6 +37,7 @@ export const Menu = (props:MunePropsType) => {
         font-size:18px;
         color:black;
         font-weight: 700;
+        cursor:pointer;
 
        
 
@@ -51,7 +52,7 @@ export const Menu = (props:MunePropsType) => {
 const StyledMenu = styled.nav`
     ul {
         display:flex;
-        gap:40px;
+        gap:30px;
         justify-content:center;
         padding-bottom: 95px;
         font-size: 18px;

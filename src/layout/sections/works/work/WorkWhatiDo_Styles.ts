@@ -81,7 +81,8 @@ Link = styled.a`
       
      &:hover {
         color:${theme.colors.titleText};
-        transition:0.3s;
+        transition:${theme.animations.transition};
+
     
      }
 

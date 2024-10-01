@@ -11,12 +11,15 @@ import { SectionServisTitile, SectionTitle } from "../../../../components/Sectio
 import { Menu, StatusType } from "../../../../components/menu/Menu";
 import { Button } from "../../../../components/Button";
 
+import { AnimatePresence, motion } from "framer-motion"
+
  
 
 const worksIitems: Array<{ status: StatusType, title: string }> = [
     {
         title: "All",
         status: "all"
+         
     },
     {
         title: "UX/UI Design",
@@ -32,9 +35,6 @@ const worksIitems: Array<{ status: StatusType, title: string }> = [
     },
 
 
-
-
-
 ]
 
 
@@ -42,19 +42,23 @@ const worksData = [
     {
         scr: work_1,
         types: ["all", 'ux'],
+        id:1,
     },
     {
         scr: work_2,
         types: ["ux"],
+        id:2
     },
     {
         scr: work_3,
         types: ["web"],
+        id:3
     },
 
     {
         scr: work_4,
         types: ["front"],
+        id:4
 
     },
 ]
@@ -94,9 +98,22 @@ export const Works_2: React.FC = () => {
                 <Menu menuItems={worksIitems} changeFilterStatus={changeFilterStatus}></Menu>
                 <FlexConteiner align="center" justify={"center"} direction={"row"} wrap={"wrap"} gap={"23px"} justifyCent="center" >
 
+                <AnimatePresence>
                     {filteredWorks.map((w) => {
-                        return <Work_2 src={w.scr} />
+                        return (
+                        <motion.div  initial={{ opacity: 0 }}
+                        layout
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        key={w.id}
+                        > 
+                         <Work_2 src={w.scr}
+                                 
+                        />
+                        </motion.div>
+                    ) 
                     })}
+                     </AnimatePresence>
 
                 </FlexConteiner>
                 <Button marg={"95px auto 0 auto "} displayBlock={"block"} thirdBtn>See More </Button>
