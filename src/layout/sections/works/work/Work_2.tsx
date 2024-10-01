@@ -33,7 +33,7 @@ const ImageWork_2 = styled.img`
         padding-top:25px;
         padding:0;
         max-width:100vw;
-       border:2px solid red;
+       
     }
 
 `
