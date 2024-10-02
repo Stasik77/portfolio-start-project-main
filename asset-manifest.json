@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio-start-project-main/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio-start-project-main/static/js/main.3041c93f.js",
+    "static/js/787.25eaef86.chunk.js": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js",
+    "static/media/Foto.webp": "/portfolio-start-project-main/static/media/Foto.f03d5d367bc9cc6c2434.webp",
+    "static/media/ux-skill.png": "/portfolio-start-project-main/static/media/ux-skill.f332ff94a0e99544a398.png",
+    "static/media/photo.jpg": "/portfolio-start-project-main/static/media/photo.8c44024d5ff00ac5b23a.jpg",
+    "static/media/4work.png": "/portfolio-start-project-main/static/media/4work.6eb743ff40f46f29dcca.png",
+    "static/media/desig-skill.png": "/portfolio-start-project-main/static/media/desig-skill.e87ea7b54c0b000384bf.png",
+    "static/media/3work.png": "/portfolio-start-project-main/static/media/3work.084a0ad0ea71eecddc25.png",
+    "static/media/front-skill.png": "/portfolio-start-project-main/static/media/front-skill.c1be1bdc4ac29cb0645d.png",
+    "static/media/Logo.svg": "/portfolio-start-project-main/static/media/Logo.a614a4b47b2ff73ff54091aa4206c6d4.svg",
+    "static/media/2work.png": "/portfolio-start-project-main/static/media/2work.bfcbcd79796b4c6ec0aa.png",
+    "static/media/ux1.svg": "/portfolio-start-project-main/static/media/ux1.c4e2c50716ce154587eaef1f78b1224b.svg",
+    "static/media/ux2.svg": "/portfolio-start-project-main/static/media/ux2.50a0bc77a25cfbb37dcc003fd501062f.svg",
+    "static/media/1work.png": "/portfolio-start-project-main/static/media/1work.82a2b8dc21333351ba4f.png",
+    "static/media/icons-sprite.svg": "/portfolio-start-project-main/static/media/icons-sprite.df146a6338c203f4acb928b209fed206.svg",
+    "static/media/ux3.svg": "/portfolio-start-project-main/static/media/ux3.97700a0c2068c5a0d26f0cf8dfc7bc02.svg",
+    "index.html": "/portfolio-start-project-main/index.html",
+    "static/media/arrowLink.svg": "/portfolio-start-project-main/static/media/arrowLink.2e42ae318c9812a7a45d27d5f22e7717.svg",
+    "static/media/arrow.svg": "/portfolio-start-project-main/static/media/arrow.718017303f0e4199671393372c2c4058.svg",
+    "static/media/Polygon1.svg": "/portfolio-start-project-main/static/media/Polygon1.338399a6c0b5f2b329099a5b03eb639e.svg",
+    "static/media/EllipseL.svg": "/portfolio-start-project-main/static/media/EllipseL.f2267306e5736f3eeca9823696c6c868.svg",
+    "static/media/EllipseR.svg": "/portfolio-start-project-main/static/media/EllipseR.cd4d6fe95422b015013dd55d057484c1.svg",
+    "main.e6c13ad2.css.map": "/portfolio-start-project-main/static/css/main.e6c13ad2.css.map",
+    "main.3041c93f.js.map": "/portfolio-start-project-main/static/js/main.3041c93f.js.map",
+    "787.25eaef86.chunk.js.map": "/portfolio-start-project-main/static/js/787.25eaef86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3041c93f.js"
+  ]
+}
